@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-card>
+      <ion-card-header>
+        current block: {{blockNumber | async}}
+      </ion-card-header>
+      <ion-card-content>
+        balance: {{balance}}
+      </ion-card-content>
+    </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+          address: 
+      </ion-label>
+      <ion-select [(ngModel)]="isNumberOfAddress"
+                  interface="action-sheet">
+        <ion-option *ngFor="let obj of wallets; let i=index"
+                    [value]="i">{{i + 1}} {{obj.address.slice(0, 12)}}...</ion-option>
+      </ion-select> 
+    </ion-item>
+  </ion-list>
+</ion-footer>

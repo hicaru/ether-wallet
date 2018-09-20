@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button [menuToggle]>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Menu
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        network: {{net | async}}
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-menu [content]="mycontent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Wallet</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="page = pages.home">
+          home
+      </button>
+      <button ion-item (click)="page = pages.impots">
+        import accaunt
+      </button>
+      <button ion-item (click)="page = pages.details">
+        details
+      </button>
+      <button ion-item>
+        network
+      </button>
+      <button ion-item (click)="page = pages.about">
+        about
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content padding>
+  <ion-nav #mycontent [root]="page"></ion-nav>
+</ion-content>

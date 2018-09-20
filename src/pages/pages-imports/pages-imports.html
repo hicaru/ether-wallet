@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-item>
+        <ion-label fixed>private key</ion-label>
+        <ion-input #key type="text" value=""></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <button ion-button
+              (click)="onPrivateKey(key.value)"
+              color="secondary"
+              outline>import</button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

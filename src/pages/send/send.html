@@ -57,11 +57,19 @@
                   gasLimit: gasLimit.value
                 })"
                 color="danger">send</button>
+        <button (click)="qrcode({
+          to: to.value, value: value.value,
+          data: data.value, gasPrice: gasPrice.value,
+          gasLimit: gasLimit.value
+        })" ion-button color="dark">qr code</button>
       </ion-col>
-      <ion-col col-3>
-        <button ion-button color="dark">qr code</button>
-      </ion-col>
-
+    
+      </ion-row>
+      
+      <ion-row justify-content-center>
+        <div class="qrCode"
+             [style.background]="'url(' + qrCodeString + ')'">
+        </div>
       </ion-row>
   </ion-grid>
 

@@ -14,4 +14,13 @@ export namespace Ethereum {
     sign(data: Object): Function;
     encrypt(password: string): Function; 
   }
+
+  export interface ITxData {
+    nonce?: number | string,
+    from?: number | string,
+    to: number | string,
+    gasLimit: number | string,
+    gasPrice: number | string,
+    value: number | string
+  }
 }

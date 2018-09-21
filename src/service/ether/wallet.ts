@@ -21,7 +21,7 @@ export class Wallet {
     }
   });
 
-  constructor() { }
+  constructor() {}
 
   public walletAddWeb3(privateKey: string): Ethereum.IWallet {
     return this._web3.eth.accounts.wallet.add(privateKey);

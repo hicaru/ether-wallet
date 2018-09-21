@@ -5,6 +5,7 @@ import { Storage } from '@ionic/storage';
 import { Wallet } from '../ether/wallet';
 import { data } from '../../app/global';
 import { Repositories } from '../interfaces';
+import { promises } from 'fs';
 
 
 @Injectable()
@@ -63,13 +64,19 @@ export class Repository extends Wallet {
     return data.wallet;
   }
 
+  public async onSign(): Promise<void> {
+    const entropy = await this._storage.get('entropy');
+    const test = await this.eth.accounts.sign(entropy, entropy);
+    console.log(test);
+  }
+
   public async onGetWalletsEncrypt(): Promise<object[]> {
     const wallets = await this._storage.get('wallet');
     return JSON.parse(wallets);
   }
 
   public async validatePassword() {
-    return this.eth.accounts.wallet.encrypt('test');
+    return this.eth.accounts['0'].wallet.encrypt('test');
   }
 
   public onClear(): void {

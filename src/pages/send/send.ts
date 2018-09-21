@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
+
 import { NavController, NavParams } from 'ionic-angular';
+
+import EthereumQRPlugin from 'ethereum-qr-code';
 
 import { Wallet } from '../../service/ether/wallet';
 import { data } from '../../app/global';
+import { Ethereum } from '../../service/interfaces';
 /**
  * Generated class for the SendPage page.
  *
@@ -10,28 +14,24 @@ import { data } from '../../app/global';
  * Ionic pages and navigation.
  */
 
-interface ITxData {
-  to: string;
-  value: number | string;
-  gasPrice: number | string;
-  gasLimit: number | string;
-  data?: number | string;
-}
-
 @Component({
   selector: 'page-send',
   templateUrl: 'send.html',
 })
 export class SendPage extends Wallet {
 
+  public qrCodeString: string;
+
   private address: string = data.wallet[data.activeAddress].address;
+  private privateKey = data.wallet[data.activeAddress].privateKey;
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams) {
     super();
   }
 
-  public async txSend(txData: ITxData) {
+  public async txSend(txData: Ethereum.ITxData) {
+    await this.walletAddWeb3(this.privateKey);
     const nonce = await this.eth.getTransactionCount(this.address);
 
     const data = {
@@ -42,17 +42,21 @@ export class SendPage extends Wallet {
         gasPrice: this.utils.toWei(txData.gasPrice.toString(), 'Gwei'),
         value: this.utils.toWei(txData.value.toString(), 'ether')
     };
-    console.log(this.eth.wallet);
-    // this.eth.sendTransaction(data, (err, hash) => {
-    //   if (hash) {
-    //     console.log(hash);
-    //     return hash
-    //   } else {
-    //     console.error(err);
-    //     return err;
-    //   }
-    // }).then(console.log).catch(console.log);
 
+    // this.eth.sendTransaction(data).then(console.log).catch(console.log);
+  }
+
+  public async qrcode(txData: Ethereum.ITxData): Promise<string> {
+    const qr = new EthereumQRPlugin();
+    const data = {
+      from: this.address,
+      to: txData.to,
+      value: this.utils.toWei(txData.value.toString(), 'ether')
+    };
+    const qrCode = qr.toDataUrl(data);
+    const base64 = await qrCode;
+    this.qrCodeString = base64.dataURL;
+    return this.qrCodeString;
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { Wallet } from '../../service/ether/wallet';
 import { HomePage } from '../home/home';
@@ -14,7 +14,6 @@ import { AboutPage } from '../about/about';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-menu',
   templateUrl: 'menu.html',
@@ -33,7 +32,6 @@ export class MenuPage extends Wallet {
   constructor(public navCtrl: NavController,
               public navParams: NavParams) {
     super();
-    // this.net().then(console.log);
   }
 
 }

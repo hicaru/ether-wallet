@@ -9,6 +9,7 @@ import { PagesImportsPage } from '../pages/pages-imports/pages-imports';
 import { MenuPage } from '../pages/menu/menu';
 import { AuthPage } from '../pages/auth/auth';
 import { DetailsPage } from '../pages/details/details';
+import { SendPage } from '../pages/send/send';
 
 import { Repository } from '../service/local/storage';
 import { storageConfig } from './global';
@@ -19,6 +20,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { Clipboard } from '@ionic-native/clipboard';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,7 +29,8 @@ import { Clipboard } from '@ionic-native/clipboard';
     PagesImportsPage,
     MenuPage,
     AuthPage,
-    DetailsPage
+    DetailsPage,
+    SendPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { Clipboard } from '@ionic-native/clipboard';
     PagesImportsPage,
     MenuPage,
     AuthPage,
-    DetailsPage
+    DetailsPage,
+    SendPage
   ],
   providers: [
     StatusBar,

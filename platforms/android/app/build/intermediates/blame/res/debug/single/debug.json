@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat",
-        "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
-    },
-    {
         "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat",
         "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/mipmap-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat",
+        "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
     },
     {
         "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_fp_40px.png.flat",
@@ -56,12 +56,12 @@
         "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-xxhdpi/ic_fp_40px.png"
     },
     {
-        "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxhdpi_screen.png.flat",
-        "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png"
-    },
-    {
         "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat",
         "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
+    },
+    {
+        "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxhdpi_screen.png.flat",
+        "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png"
     },
     {
         "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat",
@@ -80,12 +80,12 @@
         "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-port-xxxhdpi/screen.png"
     },
     {
-        "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_fp_40px.png.flat",
-        "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-mdpi/ic_fp_40px.png"
-    },
-    {
         "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_fingerprint_error.png.flat",
         "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_fingerprint_error.png"
+    },
+    {
+        "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_fp_40px.png.flat",
+        "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/drawable-mdpi/ic_fp_40px.png"
     },
     {
         "merged": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/mipmap-ldpi_icon.png.flat",

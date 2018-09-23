@@ -1,7 +1,8 @@
 {
   "name": "ether-wallet",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "ionic-angular"
 }

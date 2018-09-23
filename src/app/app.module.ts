@@ -42,11 +42,11 @@ import { Clipboard } from '@ionic-native/clipboard';
     MyApp,
     AboutPage,
     HomePage,
-    PagesImportsPage,
     MenuPage,
     AuthPage,
     DetailsPage,
-    SendPage
+    SendPage,
+    PagesImportsPage
   ],
   providers: [
     StatusBar,

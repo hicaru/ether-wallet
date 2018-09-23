@@ -23,94 +23,6 @@
             ]
         },
         {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-no_values-no.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-no/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,793,899,989,1047,1146,1443,1219,865,1348,733",
-                        "endColumns": "41,71,89,57,98,72,96,128,33,94,59",
-                        "endOffsets": "728,860,984,1042,1141,1214,1535,1343,894,1438,788"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,97,169,259,317,416,489,586,715,749,844",
-                        "endColumns": "41,71,89,57,98,72,96,128,33,94,59",
-                        "endOffsets": "92,164,254,312,411,484,581,710,744,839,899"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rSG_values-zh-rSG.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-zh-rSG/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,773,870,930,980,1049,1253,1104,836,1189,729",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "724,831,925,975,1044,1099,1320,1184,865,1248,768"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,93,156,216,266,335,390,462,547,581,645",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "88,151,211,261,330,385,457,542,576,640,684"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-ru/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,799,926,1024,1087,1189,1506,1260,892,1414,733",
-                        "endColumns": "41,92,97,62,101,70,97,153,33,91,65",
-                        "endOffsets": "728,887,1019,1082,1184,1255,1599,1409,921,1501,794"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,97,190,288,351,453,524,622,776,810,902",
-                        "endColumns": "41,92,97,62,101,70,97,153,33,91,65",
-                        "endOffsets": "92,185,283,346,448,519,617,771,805,897,963"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-th/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "708,809,923,1007,1068,1159,1453,1228,886,1357,751",
-                        "endColumns": "41,75,82,59,89,67,101,127,35,94,56",
-                        "endOffsets": "745,880,1001,1062,1153,1222,1550,1351,917,1447,803"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,97,173,256,316,406,474,576,704,740,835",
-                        "endColumns": "41,75,82,59,89,67,101,127,35,94,56",
-                        "endOffsets": "92,168,251,311,401,469,571,699,735,830,887"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat",
             "map": [
                 {
@@ -128,28 +40,6 @@
                         "startOffsets": "55,148,204,299,358,467,521,599,662,823",
                         "endColumns": "92,55,94,58,108,53,77,62,160,93",
                         "endOffsets": "143,199,294,353,462,516,594,657,818,912"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-zh-rCN/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,773,870,930,980,1049,1253,1104,836,1189,729",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "724,831,925,975,1044,1099,1320,1184,865,1248,768"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,93,156,216,266,335,390,462,547,581,645",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "88,151,211,261,330,385,457,542,576,640,684"
                     }
                 }
             ]
@@ -238,72 +128,6 @@
                         "startOffsets": "55,118,168,225,281,349,395,450,508,589",
                         "endColumns": "62,49,56,55,67,45,54,57,80,62",
                         "endOffsets": "113,163,220,276,344,390,445,503,584,647"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rMO_values-zh-rMO.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-zh-rMO/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,773,870,930,980,1049,1253,1104,836,1189,729",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "724,831,925,975,1044,1099,1320,1184,865,1248,768"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,93,156,216,266,335,390,462,547,581,645",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "88,151,211,261,330,385,457,542,576,640,684"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-zh-rHK/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,773,870,930,980,1049,1253,1104,836,1189,729",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "724,831,925,975,1044,1099,1320,1184,865,1248,768"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,93,156,216,266,335,390,462,547,581,645",
-                        "endColumns": "37,62,59,49,68,54,71,84,33,63,43",
-                        "endOffsets": "88,151,211,261,330,385,457,542,576,640,684"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-ja/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,781,878,948,1002,1078,1306,1136,844,1234,732",
-                        "endColumns": "40,62,69,53,75,57,79,97,33,71,48",
-                        "endOffsets": "727,839,943,997,1073,1131,1381,1229,873,1301,776"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,96,159,229,283,359,417,497,595,629,701",
-                        "endColumns": "40,62,69,53,75,57,79,97,33,71,48",
-                        "endOffsets": "91,154,224,278,354,412,492,590,624,696,745"
                     }
                 }
             ]
@@ -404,28 +228,6 @@
                         "startOffsets": "55,134,189,266,327,407,453,517,582,700",
                         "endColumns": "78,54,76,60,79,45,63,64,117,82",
                         "endOffsets": "129,184,261,322,402,448,512,577,695,778"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-ar/fpauth-strings.xml",
-                    "from": {
-                        "startLines": "17,19,21,22,23,24,27,25,20,26,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "691,794,911,988,1047,1136,1411,1199,874,1330,732",
-                        "endColumns": "40,79,76,58,88,62,106,130,36,80,61",
-                        "endOffsets": "727,869,983,1042,1131,1194,1513,1325,906,1406,789"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,96,176,253,312,401,464,571,702,739,820",
-                        "endColumns": "40,79,76,58,88,62,106,130,36,80,61",
-                        "endOffsets": "91,171,248,307,396,459,566,697,734,815,877"
                     }
                 }
             ]

@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "ether-wallet",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
@@ -8,7 +8,6 @@ import { Wallet } from '../../service/ether/wallet';
 // import { Ethereum } from '../../service/interfaces';
 
 
-@IonicPage()
 @Component({
   selector: 'page-pages-imports',
   templateUrl: 'pages-imports.html',

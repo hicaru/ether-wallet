@@ -483,9 +483,9 @@ var AuthPage = /** @class */ (function (_super) {
         _this.loader = _this.loadingCtrl.create({
             content: "Please wait..."
         });
-        return _this;
         // this.navCtrl.setRoot(MenuPage);
-        // this.repo.onClear();
+        _this.repo.onClear();
+        return _this;
     }
     AuthPage.prototype.signUp = function (pass0, pass1) {
         return __awaiter(this, void 0, void 0, function () {

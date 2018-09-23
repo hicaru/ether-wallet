@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Sep 23 19:56:21 YEKT 2018
+#Sun Sep 23 20:14:57 YEKT 2018
 5.base=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/assets/debug
 42.base=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/assets/debug
 32.set=ASSET

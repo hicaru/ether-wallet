@@ -33,15 +33,21 @@ export class HomePage extends Wallet {
     this.onBalance();
   }
 
-  public async onBalance(): Promise<number> {
+  public onBalance(): Promise<number> {
     /**
      * @method: Balance of address update.
      */
-    const address = await this.wallets[data.activeAddress];
-    const balance = await this.eth.getBalance(address.address);
+    const address = this.wallets[data.activeAddress];
 
-    this.balance = await this.utils.fromWei(`${balance}`, 'ether');
-    return this.balance;
+    return new Promise((resolve, reject) => {
+      this.eth.getBalance(address.address, (err, balance) => {
+        if (err) {return reject(err); }
+
+        this.balance = this.utils.fromWei(`${balance}`, 'ether');
+        
+        return resolve(this.balance);
+      });
+    });
   }
 
   presentProfileModal() {

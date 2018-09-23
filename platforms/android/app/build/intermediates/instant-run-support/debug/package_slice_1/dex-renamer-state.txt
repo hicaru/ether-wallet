@@ -1,4 +1,4 @@
-#Sun Sep 23 19:56:29 YEKT 2018
-base.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/2
+#Sun Sep 23 20:15:02 YEKT 2018
+base.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/59
 renamed.0=classes.dex
-file.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/2/classes.dex
+file.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/59/classes.dex

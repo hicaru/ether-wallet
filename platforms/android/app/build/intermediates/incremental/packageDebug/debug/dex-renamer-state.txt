@@ -1,19 +1,19 @@
-#Thu Sep 20 16:46:52 YEKT 2018
+#Sun Sep 23 17:08:21 YEKT 2018
 renamed.5=classes6.dex
 renamed.4=classes5.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/473
-base.4=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/468
-base.3=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/469
-base.2=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/470
-base.1=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/471
-base.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/472
-file.5=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/473/classes.dex
-file.4=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/468/classes.dex
-file.3=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/469/classes.dex
-file.2=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/470/classes.dex
-file.1=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/471/classes.dex
-file.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/472/classes.dex
+base.5=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/489
+base.4=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/492
+base.3=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/487
+base.2=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/490
+base.1=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/488
+base.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/491
+file.5=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/489/classes.dex
+file.4=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/492/classes.dex
+file.3=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/487/classes.dex
+file.2=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/490/classes.dex
+file.1=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/488/classes.dex
+file.0=/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/491/classes.dex

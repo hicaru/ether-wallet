@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
 
 import EthereumQRPlugin from 'ethereum-qr-code';
 
@@ -25,25 +25,37 @@ export class SendPage extends Wallet {
   private address: string = data.wallet[data.activeAddress].address;
   private privateKey = data.wallet[data.activeAddress].privateKey;
 
-  constructor(public navCtrl: NavController,
+  constructor(private alertCtrl: AlertController,
+              public navCtrl: NavController,
+              public viewCtrl: ViewController,
               public navParams: NavParams) {
     super();
   }
 
   public async txSend(txData: Ethereum.ITxData) {
-    await this.walletAddWeb3(this.privateKey);
     const nonce = await this.eth.getTransactionCount(this.address);
 
     const data = {
         nonce: nonce,
-        from: this.address,
         to: txData.to,
-        gasLimit: txData.gasLimit,
-        gasPrice: this.utils.toWei(txData.gasPrice.toString(), 'Gwei'),
-        value: this.utils.toWei(txData.value.toString(), 'ether')
+        from: `${this.address}`,
+        gasLimit: +txData.gasLimit,
+        gasPrice: +this.utils.toWei(txData.gasPrice.toString(), 'Gwei'),
+        value: +this.utils.toWei(txData.value.toString(), 'ether')
     };
 
-    // this.eth.sendTransaction(data).then(console.log).catch(console.log);
+    try {
+      const hash = await this.sendTransaction(data, this.privateKey);
+      console.log(hash);
+      return hash;
+    } catch(err) {
+      this.alertCtrl.create({
+        title: 'Error',
+        subTitle: err.message,
+        buttons: ['OK']
+      }).present();
+      return null;
+    }    
   }
 
   public async qrcode(txData: Ethereum.ITxData): Promise<string> {

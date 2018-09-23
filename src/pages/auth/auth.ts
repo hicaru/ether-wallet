@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 
 import { Wallet } from '../../service/ether/wallet';
@@ -14,7 +14,6 @@ import { MenuPage } from '../menu/menu';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-auth',
   templateUrl: 'auth.html',
@@ -80,8 +79,11 @@ export class AuthPage extends Wallet {
       await this.repo.onGetWalletsDecrypt(value);
     } catch(err) {
       this.alertCtrl.create(alert).present();
+      await this.loader.dismiss();
       return null;
     }
+
+    this.repo.activeAccountGet();
 
     this.navCtrl.setRoot(MenuPage);
     await this.loader.dismiss();

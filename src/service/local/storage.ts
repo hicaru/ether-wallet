@@ -5,7 +5,6 @@ import { Storage } from '@ionic/storage';
 import { Wallet } from '../ether/wallet';
 import { data } from '../../app/global';
 import { Repositories } from '../interfaces';
-import { promises } from 'fs';
 
 
 @Injectable()
@@ -43,12 +42,12 @@ export class Repository extends Wallet {
 
   public async onGetWalletsDecrypt(password: string): Promise<Repositories.IWallet[]> {
     const encryptWallet = await this.onGetWalletsEncrypt();
-    this.eth.accounts.wallet.decrypt(encryptWallet, password);
+    this.accounts.wallet.decrypt(encryptWallet, password);
     return this.walletToRepoWallet();
   }
 
   public walletToRepoWallet(): Repositories.IWallet[] {
-    const wallet =  this.eth.accounts.wallet;
+    const wallet =  this.accounts.wallet;
     let wallets: Repositories.IWallet[] = [];
 
     Object.keys(wallet).forEach(key => {
@@ -66,7 +65,7 @@ export class Repository extends Wallet {
 
   public async onSign(): Promise<void> {
     const entropy = await this._storage.get('entropy');
-    const test = await this.eth.accounts.sign(entropy, entropy);
+    const test = await this.accounts.sign(entropy, entropy);
     console.log(test);
   }
 
@@ -75,9 +74,16 @@ export class Repository extends Wallet {
     return JSON.parse(wallets);
   }
 
-  public async validatePassword() {
-    return this.eth.accounts['0'].wallet.encrypt('test');
+  public activeAccountSet(id: number = 0): Promise<string | number> {
+    data.activeAddress = id;
+    return this._storage.set('active', `${id}`);
   }
+  public async activeAccountGet(): Promise<number> {
+    const active = await this._storage.get('active');
+    data.activeAddress = +active || 0;
+    
+    return data.activeAddress;
+ }
 
   public onClear(): void {
     this._storage.clear();

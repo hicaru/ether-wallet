@@ -7,6 +7,7 @@ import { Wallet } from '../../service/ether/wallet';
 import { data } from '../../app/global';
 import { Repositories } from '../../service/interfaces';
 import { SendPage } from '../send/send';
+import { Repository } from '../../service/local/storage';
 
 @Component({
   selector: 'page-home',
@@ -21,13 +22,13 @@ export class HomePage extends Wallet {
     return data.activeAddress;
   }
   public set isNumberOfAddress(value: number) {
-    data.activeAddress = value;
+    this.repo.activeAccountSet(value);
     this.onBalance();
   }
   public balance: number;
-  public blockNumber: Promise<number> = this.eth.getBlockNumber();
 
-  constructor(public navCtrl: NavController,
+  constructor(private repo: Repository,
+              public navCtrl: NavController,
               public modalCtrl: ModalController) {
     super();
     this.onBalance();
@@ -40,11 +41,11 @@ export class HomePage extends Wallet {
     const address = <Repositories.IWallet>this.wallets[data.activeAddress];
     const balance = await this.eth.getBalance(address.address);
 
-    this.balance = this.utils.fromWei(balance, 'ether');
+    this.balance = this.utils.fromWei(`${balance}`, 'ether');
   }
 
   presentProfileModal() {
-    let profileModal = this.modalCtrl.create(SendPage, { userId: 8675309 });
+    const profileModal = this.modalCtrl.create(SendPage);
     profileModal.present();
   }
 

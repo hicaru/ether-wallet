@@ -26,7 +26,10 @@
 
   <ion-list *ngIf="(isExisting | async)">
       <ion-item>
-          <ion-input #pass0 type="password" placeholder="Password"></ion-input>
+          <ion-input #pass0
+                     type="password"
+                     (change)="signIn(pass0.value)"
+                     placeholder="Password"></ion-input>
       </ion-item>
       <button (click)="signIn(pass0.value)" ion-button>sign in</button>
     </ion-list>

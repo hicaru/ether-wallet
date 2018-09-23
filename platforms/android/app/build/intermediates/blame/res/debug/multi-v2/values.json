@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values/fpauth-colors.xml",
+                    "source": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values/fpauth-colors.xml",
                     "from": {
                         "startLines": "18,19,17",
                         "startColumns": "4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "164,55,105",
-                        "endColumns": "63,49,58",
-                        "endOffsets": "223,100,159"
-                    },
-                    "to": {
-                        "startLines": "5,6,15",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "198,262,866",
-                        "endColumns": "63,49,58",
-                        "endOffsets": "257,307,920"
-                    }
-                },
-                {
-                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values/fpauth-strings.xml",
+                    "source": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values/fpauth-strings.xml",
                     "from": {
                         "startLines": "19,17,21,22,23,20,24,18,25,26",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "312,397,451,535,593,687,733,804,925,1064",
                         "endColumns": "84,53,83,57,93,45,70,61,138,84",
                         "endOffsets": "392,446,530,588,682,728,799,861,1059,1144"
+                    }
+                },
+                {
+                    "source": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "164,55,105",
+                        "endColumns": "63,49,58",
+                        "endOffsets": "223,100,159"
+                    },
+                    "to": {
+                        "startLines": "5,6,15",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "198,262,866",
+                        "endColumns": "63,49,58",
+                        "endOffsets": "257,307,920"
                     }
                 }
             ]

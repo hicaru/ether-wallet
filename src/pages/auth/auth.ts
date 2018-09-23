@@ -82,7 +82,7 @@ export class AuthPage extends Wallet {
       return null;
     }
 
-    this.repo.activeAccountGet();
+    await this.repo.activeAccountGet();
 
     this.navCtrl.setRoot(MenuPage);
     await this.loader.dismiss();

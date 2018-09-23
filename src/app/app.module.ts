@@ -18,6 +18,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicStorageModule } from '@ionic/storage';
 import { Clipboard } from '@ionic-native/clipboard';
+import { HTTP } from '@ionic-native/http';
 
 
 
@@ -53,6 +54,7 @@ import { Clipboard } from '@ionic-native/clipboard';
     SplashScreen,
     Repository,
     Clipboard,
+    HTTP,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -5,100 +5,100 @@
     build-mode="FULL"
     density="xxhdpi"
     format="10"
-    plugin-version="3.0.0"
-    timestamp="1537715696802"
-    token="7601251406133181246"
-    verifier="COLD_SWAP_REQUESTED" >
+    plugin-version="3.1.4"
+    timestamp="1537731697153"
+    token="2701208685109193166"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1169" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="2990" />
     <task
         name="verifier"
-        duration="0" />
+        duration="157" />
 
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
     <artifact
-        location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+        location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1537715696802"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1537731697153"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/home/rinat/ionic/ether-wallet/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+            location="/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

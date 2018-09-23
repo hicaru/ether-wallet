@@ -1,0 +1,4 @@
+#Mon Sep 24 00:42:09 YEKT 2018
+base.0=/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex

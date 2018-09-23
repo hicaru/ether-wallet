@@ -1,15 +1,11 @@
 import Web3 from 'web3';
 import Tx from 'ethereumjs-tx';
-import utils from 'web3-utils';
-import Accounts from 'web3-eth-accounts';
 import { config } from './config';
 import { Ethereum } from '../interfaces';
 
-declare const Buffer: any;
 
-const provider = new Web3.providers.HttpProvider(config.PROVIDER);
-const web3 = new Web3(provider);
-const accounts = new Accounts(config.PROVIDER);
+declare const Buffer: any;
+const web3 = new Web3(config.ROPSTEN);
 
 
 export class Wallet {
@@ -17,18 +13,21 @@ export class Wallet {
   private _web3 = web3;
 
   public version = this._web3.version;
-  public utils = utils;
+  public utils = this._web3.utils;
   public eth = this._web3.eth;
-  public accounts = accounts;
-  public getBlockNumber: Promise<number> = new Promise((resolve, reject) => {
-    this._web3.eth.getBlockNumber((err, block) => {
-      if (err) {
-        return reject(err);
-      }
-      if (block) {
-        return resolve(+block);
-      }
-    });
+  public accounts = this._web3.eth.accounts;
+  public getBlockNumber: Promise<number> = this._web3.eth.getBlockNumber();
+  public net = this.eth.net.getId().then(id => {
+    /**
+     * @property: get network.
+     */
+    switch (id) {
+      case 1: return 'mainnet';
+      case 3: return 'ropsten';
+      case 42: return 'kovan';
+      case 4: return 'rinkeby';
+      default: return null;
+    }
   });
 
   constructor() {}
@@ -48,12 +47,13 @@ export class Wallet {
      */
     const privateKeyBufer = new Buffer(privateKey.slice(2), 'hex');
     const tx = new Tx(data);
+
     tx.sign(privateKeyBufer);
     const serializedTx = tx.serialize();
     const txInHex = `0x${serializedTx.toString('hex')}`;
 
     return new Promise((resolve, reject) => {
-      this.eth.sendRawTransaction(txInHex, (err, hash) => {
+      this._web3.eth.sendSignedTransaction(txInHex, (err, hash) => {
         if (err) { return reject(err); }
         if (hash) { return resolve(hash); }
       });

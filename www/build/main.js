@@ -1,1 +1,1255 @@
-webpackJsonp([0],{219:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=219},242:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=242},330:function(l,n,u){"use strict";function t(l){return h._21(0,[(l()(),h.Z(0,0,null,null,2,"ion-nav",[],null,null,null,ll.b,ll.a)),h._15(6144,null,nl.a,null,[ul.a]),h.Y(2,4374528,null,0,ul.a,[[2,tl.a],[2,al.a],el.a,ol.a,rl.a,h.j,h.u,h.z,h.i,il.l,sl.a,[2,cl.a],_l.a,h.k],{root:[0,"root"]},null)],function(l,n){l(n,2,0,n.component.rootPage)},null)}function a(l){return h._21(0,[(l()(),h.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),h.Y(1,16384,null,0,pl.a,[ol.a,h.j,h.z,[2,tl.a]],null,null),(l()(),h._19(-1,null,["\n  "])),(l()(),h.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,bl.b,bl.a)),h.Y(4,49152,null,0,hl.a,[el.a,[2,tl.a],[2,al.a],ol.a,h.j,h.z],null,null),(l()(),h._19(-1,3,["\n    "])),(l()(),h.Z(6,0,null,3,2,"ion-title",[],null,null,null,gl.b,gl.a)),h.Y(7,49152,null,0,ml.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),(l()(),h._19(-1,0,["\n      About\n    "])),(l()(),h._19(-1,3,["\n  "])),(l()(),h._19(-1,null,["\n"])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h.Z(12,0,null,null,2,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(13,4374528,null,0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n\n"])),(l()(),h._19(-1,null,["\n"]))],null,function(l,n){l(n,3,0,h._11(n,4)._hidden,h._11(n,4)._sbPadding);l(n,12,0,h._11(n,13).statusbarPadding,h._11(n,13)._hasRefresher)})}function e(l){return h._21(0,[(l()(),h.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),h.Y(1,16384,[[4,4]],0,kl.a,[h.j],{value:[0,"value"]},null),(l()(),h._19(2,null,[""," ","..."]))],function(l,n){l(n,1,0,n.context.index)},function(l,n){l(n,2,0,n.context.index+1,n.context.$implicit.address.slice(0,12))})}function o(l){return h._21(0,[(l()(),h.Z(0,0,null,null,30,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(1,4374528,null,0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n  "])),(l()(),h.Z(3,0,null,1,11,"ion-card",[],null,null,null,null,null)),h.Y(4,16384,null,0,zl.a,[ol.a,h.j,h.z],null,null),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(6,0,null,null,3,"ion-card-header",[],null,null,null,null,null)),h.Y(7,16384,null,0,Cl.a,[ol.a,h.j,h.z],null,null),(l()(),h._19(8,null,["\n        current block: ","\n      "])),h._13(131072,Pl.b,[h.g]),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(11,0,null,null,2,"ion-card-content",[],null,null,null,null,null)),h.Y(12,16384,null,0,xl.a,[ol.a,h.j,h.z],null,null),(l()(),h._19(13,null,["\n        balance: "," ETH\n      "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(16,0,null,1,13,"ion-grid",[["class","grid"]],null,null,null,null,null)),h.Y(17,16384,null,0,Al.a,[],null,null),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(19,0,null,null,9,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),h.Y(20,16384,null,0,Ol.a,[],null,null),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(22,0,null,null,5,"div",[],null,null,null,null,null)),(l()(),h._19(-1,null,["\n        "])),(l()(),h.Z(24,0,null,null,2,"button",[["color","secondary"],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.presentProfileModal()&&t}return t},Tl.b,Tl.a)),h.Y(25,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],{color:[0,"color"]},null),(l()(),h._19(-1,0,["\n          send\n        "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,null,["\n  "])),(l()(),h._19(-1,1,["\n"])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h.Z(32,0,null,null,30,"ion-footer",[],null,null,null,null,null)),h.Y(33,16384,null,0,Ll.a,[ol.a,h.j,h.z,[2,tl.a]],null,null),(l()(),h._19(-1,null,["\n  "])),(l()(),h.Z(35,0,null,null,26,"ion-list",[],null,null,null,null,null)),h.Y(36,16384,null,0,Rl.a,[ol.a,h.j,h.z,rl.a,il.l,_l.a],null,null),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(38,0,null,null,22,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(39,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,1,{contentLabel:0}),h._17(603979776,2,{_buttons:1}),h._17(603979776,3,{_icons:1}),h.Y(43,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n      "])),(l()(),h.Z(45,0,null,1,2,"ion-label",[],null,null,null,null,null)),h.Y(46,16384,[[1,4]],0,ql.a,[ol.a,h.j,h.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),h._19(-1,null,["\n          address: \n      "])),(l()(),h._19(-1,2,["\n      "])),(l()(),h.Z(49,0,null,3,10,"ion-select",[["interface","action-sheet"]],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==h._11(l,50)._click(u)&&t}if("keyup.space"===n){t=!1!==h._11(l,50)._keyup()&&t}if("ngModelChange"===n){t=!1!==(a.isNumberOfAddress=u)&&t}return t},Vl.b,Vl.a)),h.Y(50,1228800,null,1,Dl.a,[el.a,El.a,ol.a,h.j,h.z,[2,Wl.a],cl.a],{interface:[0,"interface"]},null),h._17(603979776,4,{options:1}),h._15(1024,null,Ul.e,function(l){return[l]},[Dl.a]),h.Y(53,671744,null,0,Ul.h,[[8,null],[8,null],[8,null],[2,Ul.e]],{model:[0,"model"]},{update:"ngModelChange"}),h._15(2048,null,Ul.f,null,[Ul.h]),h.Y(55,16384,null,0,Ul.g,[Ul.f],null,null),(l()(),h._19(-1,null,["\n        "])),(l()(),h.U(16777216,null,null,1,null,e)),h.Y(58,802816,null,0,Pl.i,[h.I,h.F,h.p],{ngForOf:[0,"ngForOf"]},null),(l()(),h._19(-1,null,["\n      "])),(l()(),h._19(-1,2,[" \n    "])),(l()(),h._19(-1,null,["\n  "])),(l()(),h._19(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,25,0,"secondary");l(n,50,0,"action-sheet");l(n,53,0,u.isNumberOfAddress);l(n,58,0,u.wallets)},function(l,n){var u=n.component;l(n,0,0,h._11(n,1).statusbarPadding,h._11(n,1)._hasRefresher);l(n,8,0,h._20(n,8,0,h._11(n,9).transform(u.getBlockNumber)));l(n,13,0,u.balance);l(n,49,0,h._11(n,50)._disabled,h._11(n,55).ngClassUntouched,h._11(n,55).ngClassTouched,h._11(n,55).ngClassPristine,h._11(n,55).ngClassDirty,h._11(n,55).ngClassValid,h._11(n,55).ngClassInvalid,h._11(n,55).ngClassPending)})}function r(l){return h._21(0,[(l()(),h.Z(0,0,null,null,29,"ion-header",[],null,null,null,null,null)),h.Y(1,16384,null,0,pl.a,[ol.a,h.j,h.z,[2,tl.a]],null,null),(l()(),h._19(-1,null,["\n  "])),(l()(),h.Z(3,0,null,null,25,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,bl.b,bl.a)),h.Y(4,49152,null,0,hl.a,[el.a,[2,tl.a],[2,al.a],ol.a,h.j,h.z],null,null),(l()(),h._19(-1,3,["\n    "])),(l()(),h.Z(6,0,null,0,8,"button",[["ion-button",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==h._11(l,8).toggle()&&t}return t},Tl.b,Tl.a)),h.Y(7,1097728,[[1,4]],0,Sl.a,[[8,""],ol.a,h.j,h.z],null,null),h.Y(8,1064960,null,0,Xl.a,[Fl.a,[2,tl.a],[2,Sl.a],[2,hl.a]],null,null),h.Y(9,16384,null,1,Hl.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),h._17(603979776,1,{_buttons:1}),(l()(),h._19(-1,0,["\n      "])),(l()(),h.Z(12,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),h.Y(13,147456,null,0,Jl.a,[ol.a,h.j,h.z],{name:[0,"name"]},null),(l()(),h._19(-1,0,["\n    "])),(l()(),h._19(-1,3,["\n    "])),(l()(),h.Z(16,0,null,3,2,"ion-title",[],null,null,null,gl.b,gl.a)),h.Y(17,49152,null,0,ml.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),(l()(),h._19(-1,0,["\n      Menu\n    "])),(l()(),h._19(-1,3,["\n\n    "])),(l()(),h.Z(20,0,null,2,7,"ion-buttons",[["end",""]],null,null,null,null,null)),h.Y(21,16384,null,1,Hl.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),h._17(603979776,2,{_buttons:1}),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(24,0,null,null,2,"button",[["icon-only",""],["ion-button",""]],null,null,null,Tl.b,Tl.a)),h.Y(25,1097728,[[2,4]],0,Sl.a,[[8,""],ol.a,h.j,h.z],null,null),(l()(),h._19(-1,0,["\n        network: main\n      "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,3,["\n\n  "])),(l()(),h._19(-1,null,["\n"])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h.Z(31,0,null,null,70,"ion-menu",[["role","navigation"]],null,null,null,$l.b,$l.a)),h._15(6144,null,nl.a,null,[Ql.a]),h.Y(33,245760,null,2,Ql.a,[Fl.a,h.j,ol.a,rl.a,h.z,Yl.a,il.l,_l.a,el.a],{content:[0,"content"]},null),h._17(335544320,3,{menuContent:0}),h._17(335544320,4,{menuNav:0}),(l()(),h._19(-1,0,["\n  "])),(l()(),h.Z(37,0,null,0,10,"ion-header",[],null,null,null,null,null)),h.Y(38,16384,null,0,pl.a,[ol.a,h.j,h.z,[2,tl.a]],null,null),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(40,0,null,null,6,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,ln.b,ln.a)),h.Y(41,49152,null,0,vl.a,[ol.a,h.j,h.z],null,null),(l()(),h._19(-1,3,["\n      "])),(l()(),h.Z(43,0,null,3,2,"ion-title",[],null,null,null,gl.b,gl.a)),h.Y(44,49152,null,0,ml.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),(l()(),h._19(-1,0,["Wallet"])),(l()(),h._19(-1,3,["\n    "])),(l()(),h._19(-1,null,["\n  "])),(l()(),h._19(-1,0,["\n  "])),(l()(),h.Z(49,0,null,0,51,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(50,4374528,[[3,4]],0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n    "])),(l()(),h.Z(52,0,null,1,47,"ion-list",[],null,null,null,null,null)),h.Y(53,16384,null,0,Rl.a,[ol.a,h.j,h.z,rl.a,il.l,_l.a],null,null),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(55,0,null,null,7,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==h._11(l,61).close()&&t}if("click"===n){t=!1!==(a.page=a.pages.home)&&t}return t},Il.b,Il.a)),h.Y(56,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,5,{contentLabel:0}),h._17(603979776,6,{_buttons:1}),h._17(603979776,7,{_icons:1}),h.Y(60,16384,null,0,Gl.a,[],null,null),h.Y(61,16384,null,0,nn.a,[Fl.a],{menuClose:[0,"menuClose"]},null),(l()(),h._19(-1,2,["\n        home\n      "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(64,0,null,null,7,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==h._11(l,70).close()&&t}if("click"===n){t=!1!==(a.page=a.pages.impots)&&t}return t},Il.b,Il.a)),h.Y(65,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,8,{contentLabel:0}),h._17(603979776,9,{_buttons:1}),h._17(603979776,10,{_icons:1}),h.Y(69,16384,null,0,Gl.a,[],null,null),h.Y(70,16384,null,0,nn.a,[Fl.a],{menuClose:[0,"menuClose"]},null),(l()(),h._19(-1,2,["\n        import accaunt\n      "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(73,0,null,null,7,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==h._11(l,79).close()&&t}if("click"===n){t=!1!==(a.page=a.pages.details)&&t}return t},Il.b,Il.a)),h.Y(74,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,11,{contentLabel:0}),h._17(603979776,12,{_buttons:1}),h._17(603979776,13,{_icons:1}),h.Y(78,16384,null,0,Gl.a,[],null,null),h.Y(79,16384,null,0,nn.a,[Fl.a],{menuClose:[0,"menuClose"]},null),(l()(),h._19(-1,2,["\n        details\n      "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(82,0,null,null,7,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==h._11(l,88).close()&&t}return t},Il.b,Il.a)),h.Y(83,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,14,{contentLabel:0}),h._17(603979776,15,{_buttons:1}),h._17(603979776,16,{_icons:1}),h.Y(87,16384,null,0,Gl.a,[],null,null),h.Y(88,16384,null,0,nn.a,[Fl.a],{menuClose:[0,"menuClose"]},null),(l()(),h._19(-1,2,["\n        network\n      "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(91,0,null,null,7,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==h._11(l,97).close()&&t}if("click"===n){t=!1!==(a.page=a.pages.about)&&t}return t},Il.b,Il.a)),h.Y(92,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,17,{contentLabel:0}),h._17(603979776,18,{_buttons:1}),h._17(603979776,19,{_icons:1}),h.Y(96,16384,null,0,Gl.a,[],null,null),h.Y(97,16384,null,0,nn.a,[Fl.a],{menuClose:[0,"menuClose"]},null),(l()(),h._19(-1,2,["\n        about\n      "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,1,["\n  "])),(l()(),h._19(-1,0,["\n"])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h.Z(103,0,null,null,6,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(104,4374528,null,0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n  "])),(l()(),h.Z(106,0,null,1,2,"ion-nav",[],null,null,null,ll.b,ll.a)),h._15(6144,null,nl.a,null,[ul.a]),h.Y(108,4374528,[["mycontent",4]],0,ul.a,[[2,tl.a],[2,al.a],el.a,ol.a,rl.a,h.j,h.u,h.z,h.i,il.l,sl.a,[2,cl.a],_l.a,h.k],{root:[0,"root"]},null),(l()(),h._19(-1,1,["\n"]))],function(l,n){var u=n.component;l(n,13,0,"menu");l(n,33,0,h._11(n,108));l(n,61,0,"");l(n,70,0,"");l(n,79,0,"");l(n,88,0,"");l(n,97,0,"");l(n,108,0,u.page)},function(l,n){l(n,3,0,h._11(n,4)._hidden,h._11(n,4)._sbPadding);l(n,6,0,h._11(n,8).isHidden);l(n,12,0,h._11(n,13)._hidden);l(n,40,0,h._11(n,41)._sbPadding);l(n,49,0,h._11(n,50).statusbarPadding,h._11(n,50)._hasRefresher);l(n,103,0,h._11(n,104).statusbarPadding,h._11(n,104)._hasRefresher)})}function i(l){return h._21(0,[(l()(),h.Z(0,0,null,null,28,"ion-list",[],null,null,null,null,null)),h.Y(1,16384,null,0,Rl.a,[ol.a,h.j,h.z,rl.a,il.l,_l.a],null,null),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(3,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(4,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,1,{contentLabel:0}),h._17(603979776,2,{_buttons:1}),h._17(603979776,3,{_icons:1}),h.Y(8,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n        "])),(l()(),h.Z(10,0,null,3,1,"ion-input",[["placeholder","Password"],["type","password"]],null,null,null,an.b,an.a)),h.Y(11,5423104,[["pass0",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),h._19(-1,2,["\n    "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(14,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(15,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,4,{contentLabel:0}),h._17(603979776,5,{_buttons:1}),h._17(603979776,6,{_icons:1}),h.Y(19,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n        "])),(l()(),h.Z(21,0,null,3,1,"ion-input",[["placeholder","Password Confirm"],["type","password"]],null,null,null,an.b,an.a)),h.Y(22,5423104,[["pass1",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),h._19(-1,2,["\n    "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(25,0,null,null,2,"button",[["ion-button",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.signUp(h._11(l,11).value,h._11(l,22).value)&&t}return t},Tl.b,Tl.a)),h.Y(26,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],null,null),(l()(),h._19(-1,0,["sign up"])),(l()(),h._19(-1,null,["\n  "]))],function(l,n){l(n,11,0,"password","Password");l(n,22,0,"password","Password Confirm")},null)}function s(l){return h._21(0,[(l()(),h.Z(0,0,null,null,17,"ion-list",[],null,null,null,null,null)),h.Y(1,16384,null,0,Rl.a,[ol.a,h.j,h.z,rl.a,il.l,_l.a],null,null),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(3,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(4,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,7,{contentLabel:0}),h._17(603979776,8,{_buttons:1}),h._17(603979776,9,{_icons:1}),h.Y(8,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n          "])),(l()(),h.Z(10,0,null,3,1,"ion-input",[["placeholder","Password"],["type","password"]],null,[[null,"change"]],function(l,n,u){var t=!0;if("change"===n){t=!1!==l.component.signIn(h._11(l,11).value)&&t}return t},an.b,an.a)),h.Y(11,5423104,[["pass0",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),h._19(-1,2,["\n      "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(14,0,null,null,2,"button",[["ion-button",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.signIn(h._11(l,11).value)&&t}return t},Tl.b,Tl.a)),h.Y(15,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],null,null),(l()(),h._19(-1,0,["sign in"])),(l()(),h._19(-1,null,["\n    "]))],function(l,n){l(n,11,0,"password","Password")},null)}function c(l){return h._21(0,[(l()(),h._19(-1,null,["\n"])),(l()(),h.Z(1,0,null,null,10,"ion-header",[],null,null,null,null,null)),h.Y(2,16384,null,0,pl.a,[ol.a,h.j,h.z,[2,tl.a]],null,null),(l()(),h._19(-1,null,["\n\n  "])),(l()(),h.Z(4,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,bl.b,bl.a)),h.Y(5,49152,null,0,hl.a,[el.a,[2,tl.a],[2,al.a],ol.a,h.j,h.z],null,null),(l()(),h._19(-1,3,["\n    "])),(l()(),h.Z(7,0,null,3,2,"ion-title",[],null,null,null,gl.b,gl.a)),h.Y(8,49152,null,0,ml.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),(l()(),h._19(-1,0,["Sign"])),(l()(),h._19(-1,3,["\n  "])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h._19(-1,null,["\n\n\n"])),(l()(),h.Z(13,0,null,null,10,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(14,4374528,null,0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n  "])),(l()(),h.U(16777216,null,1,2,null,i)),h.Y(17,16384,null,0,Pl.j,[h.I,h.F],{ngIf:[0,"ngIf"]},null),h._13(131072,Pl.b,[h.g]),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.U(16777216,null,1,2,null,s)),h.Y(21,16384,null,0,Pl.j,[h.I,h.F],{ngIf:[0,"ngIf"]},null),h._13(131072,Pl.b,[h.g]),(l()(),h._19(-1,1,["\n"])),(l()(),h._19(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,17,0,!h._20(n,17,0,h._11(n,18).transform(u.isExisting)));l(n,21,0,h._20(n,21,0,h._11(n,22).transform(u.isExisting)))},function(l,n){l(n,4,0,h._11(n,5)._hidden,h._11(n,5)._sbPadding);l(n,13,0,h._11(n,14).statusbarPadding,h._11(n,14)._hasRefresher)})}function _(l){return h._21(0,[(l()(),h.Z(0,0,null,null,5,"div",[],null,null,null,null,null)),(l()(),h._19(-1,null,["\n          "])),(l()(),h.Z(2,0,null,null,2,"ion-img",[["height","150"],["width","150"]],null,null,null,_n.b,_n.a)),h.Y(3,1228800,null,0,dn.a,[h.j,h.z,rl.a,[2,wl.a],_l.a],{src:[0,"src"],width:[1,"width"],height:[2,"height"]},null),(l()(),h._19(-1,null,["\n          "])),(l()(),h._19(-1,null,["\n        "]))],function(l,n){l(n,3,0,h._2(1,"",n.component.qrCodeString,""),"150","150")},null)}function d(l){return h._21(0,[(l()(),h._19(-1,null,["\n"])),(l()(),h.Z(1,0,null,null,10,"ion-header",[],null,null,null,null,null)),h.Y(2,16384,null,0,pl.a,[ol.a,h.j,h.z,[2,tl.a]],null,null),(l()(),h._19(-1,null,["\n\n  "])),(l()(),h.Z(4,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,bl.b,bl.a)),h.Y(5,49152,null,0,hl.a,[el.a,[2,tl.a],[2,al.a],ol.a,h.j,h.z],null,null),(l()(),h._19(-1,3,["\n    "])),(l()(),h.Z(7,0,null,3,2,"ion-title",[],null,null,null,gl.b,gl.a)),h.Y(8,49152,null,0,ml.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),(l()(),h._19(-1,0,["details"])),(l()(),h._19(-1,3,["\n  "])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h.Z(13,0,null,null,37,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(14,4374528,null,0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n    "])),(l()(),h.Z(16,0,null,1,22,"ion-list",[],null,null,null,null,null)),h.Y(17,16384,null,0,Rl.a,[ol.a,h.j,h.z,rl.a,il.l,_l.a],null,null),(l()(),h._19(-1,null,["\n        "])),(l()(),h.Z(19,0,null,null,18,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(20,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,1,{contentLabel:0}),h._17(603979776,2,{_buttons:1}),h._17(603979776,3,{_icons:1}),h.Y(24,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n          "])),(l()(),h.Z(26,0,null,0,2,"ion-note",[["item-start",""]],null,null,null,null,null)),h.Y(27,16384,null,0,fn.a,[ol.a,h.j,h.z],null,null),(l()(),h._19(28,null,["\n            Address ",":\n          "])),(l()(),h._19(29,2,["\n          ","\n          "])),(l()(),h.Z(30,0,null,4,6,"ion-note",[["item-end",""]],null,null,null,null,null)),h.Y(31,16384,null,0,fn.a,[ol.a,h.j,h.z],null,null),(l()(),h._19(-1,null,["\n              "])),(l()(),h.Z(33,0,null,null,2,"button",[["color","secondary"],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.copyAddress()&&t}return t},Tl.b,Tl.a)),h.Y(34,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],{color:[0,"color"]},null),(l()(),h._19(-1,0,["Copy"])),(l()(),h._19(-1,null,["\n          "])),(l()(),h._19(-1,2,["\n        "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(40,0,null,1,9,"ion-grid",[["class","grid"]],null,null,null,null,null)),h.Y(41,16384,null,0,Al.a,[],null,null),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(43,0,null,null,5,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),h.Y(44,16384,null,0,Ol.a,[],null,null),(l()(),h._19(-1,null,["\n        "])),(l()(),h.U(16777216,null,null,1,null,_)),h.Y(47,16384,null,0,Pl.j,[h.I,h.F],{ngIf:[0,"ngIf"]},null),(l()(),h._19(-1,null,["\n      "])),(l()(),h._19(-1,null,["\n  "])),(l()(),h._19(-1,1,["\n\n"])),(l()(),h._19(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,34,0,"secondary");l(n,47,0,u.qrCodeString)},function(l,n){var u=n.component;l(n,4,0,h._11(n,5)._hidden,h._11(n,5)._sbPadding);l(n,13,0,h._11(n,14).statusbarPadding,h._11(n,14)._hasRefresher);l(n,28,0,u.numberOfAccaunt);l(n,29,0,u.address)})}function f(l){return h._21(0,[(l()(),h._19(-1,null,["\n"])),(l()(),h.Z(1,0,null,null,10,"ion-header",[],null,null,null,null,null)),h.Y(2,16384,null,0,pl.a,[ol.a,h.j,h.z,[2,tl.a]],null,null),(l()(),h._19(-1,null,["\n\n  "])),(l()(),h.Z(4,0,null,null,6,"ion-navbar",[["class","toolbar"],["color","dark"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,bl.b,bl.a)),h.Y(5,49152,null,0,hl.a,[el.a,[2,tl.a],[2,al.a],ol.a,h.j,h.z],{color:[0,"color"]},null),(l()(),h._19(-1,3,["\n    "])),(l()(),h.Z(7,0,null,3,2,"ion-title",[],null,null,null,gl.b,gl.a)),h.Y(8,49152,null,0,ml.a,[ol.a,h.j,h.z,[2,vl.a],[2,hl.a]],null,null),(l()(),h._19(-1,0,["Creating a transaction!"])),(l()(),h._19(-1,3,["\n  "])),(l()(),h._19(-1,null,["\n\n"])),(l()(),h._19(-1,null,["\n\n\n"])),(l()(),h.Z(13,0,null,null,99,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(14,4374528,null,0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(16,0,null,1,10,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(17,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,1,{contentLabel:0}),h._17(603979776,2,{_buttons:1}),h._17(603979776,3,{_icons:1}),h.Y(21,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n    "])),(l()(),h.Z(23,0,null,3,2,"ion-input",[["placeholder","Recipient Address"],["type","text"]],null,null,null,an.b,an.a)),h.Y(24,5423104,[["to",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,2,["\n  "])),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(28,0,null,1,10,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(29,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,4,{contentLabel:0}),h._17(603979776,5,{_buttons:1}),h._17(603979776,6,{_icons:1}),h.Y(33,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n    "])),(l()(),h.Z(35,0,null,3,2,"ion-input",[["placeholder","Amount"],["type","number"]],null,null,null,an.b,an.a)),h.Y(36,5423104,[["value",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,2,["\n  "])),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(40,0,null,1,10,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(41,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,7,{contentLabel:0}),h._17(603979776,8,{_buttons:1}),h._17(603979776,9,{_icons:1}),h.Y(45,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n    "])),(l()(),h.Z(47,0,null,3,2,"ion-input",[["placeholder","TRANSACTION DATA (OPTIONAL)"],["type","number"]],null,null,null,an.b,an.a)),h.Y(48,5423104,[["data",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,2,["\n  "])),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(52,0,null,1,13,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(53,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,10,{contentLabel:0}),h._17(603979776,11,{_buttons:1}),h._17(603979776,12,{_icons:1}),h.Y(57,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n    "])),(l()(),h.Z(59,0,null,1,2,"ion-label",[["color","primary"]],null,null,null,null,null)),h.Y(60,16384,[[10,4]],0,ql.a,[ol.a,h.j,h.z,[8,null],[8,null],[8,null],[8,null]],{color:[0,"color"]},null),(l()(),h._19(-1,null,["Gas Price in Gwei"])),(l()(),h._19(-1,2,["\n    "])),(l()(),h.Z(63,0,null,3,1,"ion-input",[["type","number"]],null,null,null,an.b,an.a)),h.Y(64,5423104,[["gasPrice",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{value:[0,"value"],type:[1,"type"]},null),(l()(),h._19(-1,2,["\n  "])),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(67,0,null,1,13,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(68,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,13,{contentLabel:0}),h._17(603979776,14,{_buttons:1}),h._17(603979776,15,{_icons:1}),h.Y(72,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n    "])),(l()(),h.Z(74,0,null,1,2,"ion-label",[["color","primary"]],null,null,null,null,null)),h.Y(75,16384,[[13,4]],0,ql.a,[ol.a,h.j,h.z,[8,null],[8,null],[8,null],[8,null]],{color:[0,"color"]},null),(l()(),h._19(-1,null,["Gas Limit"])),(l()(),h._19(-1,2,["\n    "])),(l()(),h.Z(78,0,null,3,1,"ion-input",[["type","number"]],null,null,null,an.b,an.a)),h.Y(79,5423104,[["gasLimit",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{value:[0,"value"],type:[1,"type"]},null),(l()(),h._19(-1,2,["\n  "])),(l()(),h._19(-1,1,["\n\n  "])),(l()(),h.Z(82,0,null,1,29,"ion-grid",[["class","grid"]],null,null,null,null,null)),h.Y(83,16384,null,0,Al.a,[],null,null),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(85,0,null,null,18,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),h.Y(86,16384,null,0,Ol.a,[],null,null),(l()(),h._19(-1,null,["\n\n      "])),(l()(),h.Z(88,0,null,null,14,"ion-col",[["class","col"],["col-4",""]],null,null,null,null,null)),h.Y(89,16384,null,0,hn.a,[],null,null),(l()(),h._19(-1,null,["\n        "])),(l()(),h.Z(91,0,null,null,2,"button",[["color","secondary"],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.txSend({to:h._11(l,24).value,value:h._11(l,36).value,data:h._11(l,48).value,gasPrice:h._11(l,64).value,gasLimit:h._11(l,79).value})&&t}return t},Tl.b,Tl.a)),h.Y(92,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],{color:[0,"color"]},null),(l()(),h._19(-1,0,["send"])),(l()(),h._19(-1,null,["\n\n        "])),(l()(),h.Z(95,0,null,null,2,"button",[["color","dark"],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.qrcode({to:h._11(l,24).value,value:h._11(l,36).value,data:h._11(l,48).value,gasPrice:h._11(l,64).value,gasLimit:h._11(l,79).value})&&t}return t},Tl.b,Tl.a)),h.Y(96,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],{color:[0,"color"]},null),(l()(),h._19(-1,0,["qr code"])),(l()(),h._19(-1,null,["\n\n        "])),(l()(),h.Z(99,0,null,null,2,"button",[["color","danger"],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.viewCtrl.dismiss()&&t}return t},Tl.b,Tl.a)),h.Y(100,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],{color:[0,"color"]},null),(l()(),h._19(-1,0,["reject"])),(l()(),h._19(-1,null,["\n      "])),(l()(),h._19(-1,null,["\n    \n      "])),(l()(),h._19(-1,null,["\n      \n      "])),(l()(),h.Z(105,0,null,null,5,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),h.Y(106,16384,null,0,Ol.a,[],null,null),(l()(),h._19(-1,null,["\n        "])),(l()(),h.Z(108,0,null,null,1,"div",[["class","qrCode"]],[[4,"background",null]],null,null,null,null)),(l()(),h._19(-1,null,["\n        "])),(l()(),h._19(-1,null,["\n      "])),(l()(),h._19(-1,null,["\n  "])),(l()(),h._19(-1,1,["\n\n"]))],function(l,n){l(n,5,0,"dark");l(n,24,0,"text","Recipient Address");l(n,36,0,"number","Amount");l(n,48,0,"number","TRANSACTION DATA (OPTIONAL)");l(n,60,0,"primary");l(n,64,0,7,"number");l(n,75,0,"primary");l(n,79,0,21e3,"number");l(n,92,0,"secondary");l(n,96,0,"dark");l(n,100,0,"danger")},function(l,n){var u=n.component;l(n,4,0,h._11(n,5)._hidden,h._11(n,5)._sbPadding);l(n,13,0,h._11(n,14).statusbarPadding,h._11(n,14)._hasRefresher);l(n,108,0,"url("+u.qrCodeString+")")})}function p(l){return h._21(0,[(l()(),h.Z(0,0,null,null,33,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,yl.b,yl.a)),h.Y(1,4374528,null,0,wl.a,[ol.a,rl.a,_l.a,h.j,h.z,el.a,Yl.a,h.u,[2,tl.a],[2,al.a]],null,null),(l()(),h._19(-1,1,["\n  "])),(l()(),h.Z(3,0,null,1,29,"ion-grid",[["class","grid"]],null,null,null,null,null)),h.Y(4,16384,null,0,Al.a,[],null,null),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(6,0,null,null,17,"ion-row",[["class","row"]],null,null,null,null,null)),h.Y(7,16384,null,0,Ol.a,[],null,null),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(9,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Il.b,Il.a)),h.Y(10,1097728,null,3,Wl.a,[El.a,ol.a,h.j,h.z,[2,Nl.a]],null,null),h._17(335544320,1,{contentLabel:0}),h._17(603979776,2,{_buttons:1}),h._17(603979776,3,{_icons:1}),h.Y(14,16384,null,0,Gl.a,[],null,null),(l()(),h._19(-1,2,["\n        "])),(l()(),h.Z(16,0,null,1,2,"ion-label",[["fixed",""]],null,null,null,null,null)),h.Y(17,16384,[[1,4]],0,ql.a,[ol.a,h.j,h.z,[8,null],[8,null],[8,""],[8,null]],null,null),(l()(),h._19(-1,null,["private key"])),(l()(),h._19(-1,2,["\n        "])),(l()(),h.Z(20,0,null,3,1,"ion-input",[["type","text"],["value",""]],null,null,null,an.b,an.a)),h.Y(21,5423104,[["key",4]],0,en.a,[ol.a,rl.a,El.a,el.a,h.j,h.z,[2,wl.a],[2,Wl.a],[2,Ul.f],_l.a],{value:[0,"value"],type:[1,"type"]},null),(l()(),h._19(-1,2,["\n      "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,null,["\n    "])),(l()(),h.Z(25,0,null,null,6,"ion-row",[["class","row"]],null,null,null,null,null)),h.Y(26,16384,null,0,Ol.a,[],null,null),(l()(),h._19(-1,null,["\n      "])),(l()(),h.Z(28,0,null,null,2,"button",[["color","secondary"],["ion-button",""],["outline",""]],null,null,null,Tl.b,Tl.a)),h.Y(29,1097728,null,0,Sl.a,[[8,""],ol.a,h.j,h.z],{color:[0,"color"],outline:[1,"outline"]},null),(l()(),h._19(-1,0,["import"])),(l()(),h._19(-1,null,["\n    "])),(l()(),h._19(-1,null,["\n  "])),(l()(),h._19(-1,1,["\n"])),(l()(),h._19(-1,null,["\n"]))],function(l,n){l(n,21,0,"","text");l(n,29,0,"secondary","")},function(l,n){l(n,0,0,h._11(n,1).statusbarPadding,h._11(n,1)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var b=u(58),h=u(0),g=u(3),m=(u(60),u(130)),v=u(131),y=u(80),w=u(208),Y={activeAddress:0},j=this&&this.__awaiter||function(l,n,u,t){return new(u||(u=Promise))(function(a,e){function o(l){try{i(t.next(l))}catch(l){e(l)}}function r(l){try{i(t.throw(l))}catch(l){e(l)}}function i(l){l.done?a(l.value):new u(function(n){n(l.value)}).then(o,r)}i((t=t.apply(l,n||[])).next())})},Z=this&&this.__generator||function(l,n){function u(u){return function(o){return function(u){if(t)throw new TypeError("Generator is already executing.");for(;r;)try{if(t=1,a&&(e=a[2&u[0]?"return":u[0]?"throw":"next"])&&!(e=e.call(a,u[1])).done)return e;switch(a=0,e&&(u=[0,e.value]),u[0]){case 0:case 1:e=u;break;case 4:return r.label++,{value:u[1],done:!1};case 5:r.label++,a=u[1],u=[0];continue;case 7:u=r.ops.pop(),r.trys.pop();continue;default:if(e=r.trys,!(e=e.length>0&&e[e.length-1])&&(6===u[0]||2===u[0])){r=0;continue}if(3===u[0]&&(!e||u[1]>e[0]&&u[1]<e[3])){r.label=u[1];break}if(6===u[0]&&r.label<e[1]){r.label=e[1],e=u;break}if(e&&r.label<e[2]){r.label=e[2],r.ops.push(u);break}e[2]&&r.ops.pop(),r.trys.pop();continue}u=n.call(l,r)}catch(l){u=[6,l],a=0}finally{t=e=0}if(5&u[0])throw u[1];return{value:u[0]?u[1]:void 0,done:!0}}([u,o])}}var t,a,e,o,r={label:0,sent:function(){if(1&e[0])throw e[1];return e[1]},trys:[],ops:[]};return o={next:u(0),throw:u(1),return:u(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o},k=function(l){function n(n){var u=l.call(this)||this;return u._storage=n,u}return Object(g.__extends)(n,l),n.prototype.onWriteEntropy=function(l){return this._storage.set("entropy",l)},n.prototype.onGetEntropy=function(){return this._storage.get("entropy")},n.prototype.onWriteWalletObjec=function(l){return j(this,void 0,void 0,function(){var n;return Z(this,function(u){switch(u.label){case 0:return n=this.accounts.wallet.encrypt(l),[4,this._storage.set("wallet",JSON.stringify(n))];case 1:return u.sent(),[2,this.walletToRepoWallet()]}})})},n.prototype.onGetWalletsDecrypt=function(l){return j(this,void 0,void 0,function(){var n;return Z(this,function(u){switch(u.label){case 0:return[4,this.onGetWalletsEncrypt()];case 1:return n=u.sent(),this.accounts.wallet.decrypt(n,l),[2,this.walletToRepoWallet()]}})})},n.prototype.walletToRepoWallet=function(){var l=this,n=this.accounts.wallet,u=[];return Object.keys(n).forEach(function(t){isNaN(+t)||l.utils.isAddress(t)||u.push({address:n[t].address,privateKey:n[t].privateKey})}),Y.wallet=u,Y.wallet},n.prototype.onGetWalletsEncrypt=function(){return j(this,void 0,void 0,function(){var l;return Z(this,function(n){switch(n.label){case 0:return[4,this._storage.get("wallet")];case 1:return l=n.sent(),[2,JSON.parse(l)]}})})},n.prototype.activeAccountSet=function(l){return void 0===l&&(l=0),Y.activeAddress=l,this._storage.set("active",""+l)},n.prototype.activeAccountGet=function(){return j(this,void 0,void 0,function(){var l;return Z(this,function(n){switch(n.label){case 0:return[4,this._storage.get("active")];case 1:return l=n.sent(),Y.activeAddress=+l||0,[2,Y.activeAddress]}})})},n.prototype.onClear=function(){this._storage.clear()},n.prototype.isNotVirgin=function(){return j(this,void 0,void 0,function(){var l;return Z(this,function(n){switch(n.label){case 0:return n.trys.push([0,2,,3]),[4,this._storage.length()];case 1:return l=n.sent(),[3,3];case 2:return n.sent(),[2,!1];case 3:return[2,!!l]}})})},n}(y.a),z=u(324),C=u.n(z),P=this&&this.__awaiter||function(l,n,u,t){return new(u||(u=Promise))(function(a,e){function o(l){try{i(t.next(l))}catch(l){e(l)}}function r(l){try{i(t.throw(l))}catch(l){e(l)}}function i(l){l.done?a(l.value):new u(function(n){n(l.value)}).then(o,r)}i((t=t.apply(l,n||[])).next())})},x=this&&this.__generator||function(l,n){function u(u){return function(o){return function(u){if(t)throw new TypeError("Generator is already executing.");for(;r;)try{if(t=1,a&&(e=a[2&u[0]?"return":u[0]?"throw":"next"])&&!(e=e.call(a,u[1])).done)return e;switch(a=0,e&&(u=[0,e.value]),u[0]){case 0:case 1:e=u;break;case 4:return r.label++,{value:u[1],done:!1};case 5:r.label++,a=u[1],u=[0];continue;case 7:u=r.ops.pop(),r.trys.pop();continue;default:if(e=r.trys,!(e=e.length>0&&e[e.length-1])&&(6===u[0]||2===u[0])){r=0;continue}if(3===u[0]&&(!e||u[1]>e[0]&&u[1]<e[3])){r.label=u[1];break}if(6===u[0]&&r.label<e[1]){r.label=e[1],e=u;break}if(e&&r.label<e[2]){r.label=e[2],r.ops.push(u);break}e[2]&&r.ops.pop(),r.trys.pop();continue}u=n.call(l,r)}catch(l){u=[6,l],a=0}finally{t=e=0}if(5&u[0])throw u[1];return{value:u[0]?u[1]:void 0,done:!0}}([u,o])}}var t,a,e,o,r={label:0,sent:function(){if(1&e[0])throw e[1];return e[1]},trys:[],ops:[]};return o={next:u(0),throw:u(1),return:u(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o},A=function(l){function n(n,u){var t=l.call(this)||this;return t.alertCtrl=n,t.viewCtrl=u,t.address=Y.wallet[Y.activeAddress].address,t.privateKey=Y.wallet[Y.activeAddress].privateKey,t}return Object(g.__extends)(n,l),n.prototype.txSend=function(l){return P(this,void 0,void 0,function(){var n,u,t,a;return x(this,function(e){switch(e.label){case 0:return[4,this.eth.getTransactionCount(this.address)];case 1:n=e.sent(),u={nonce:n,to:l.to,from:""+this.address,gasLimit:+l.gasLimit,gasPrice:+this.utils.toWei(l.gasPrice.toString(),"Gwei"),value:+this.utils.toWei(l.value.toString(),"ether")},e.label=2;case 2:return e.trys.push([2,4,,5]),[4,this.sendTransaction(u,this.privateKey)];case 3:return t=e.sent(),console.log(t),[2,t];case 4:return a=e.sent(),this.alertCtrl.create({title:"Error",subTitle:a.message,buttons:["OK"]}).present(),[2,null];case 5:return[2]}})})},n.prototype.qrcode=function(l){return P(this,void 0,void 0,function(){var n,u,t,a;return x(this,function(e){switch(e.label){case 0:return n=new C.a,u={from:this.address,to:l.to,value:this.utils.toWei(l.value.toString(),"ether")},t=n.toDataUrl(u),[4,t];case 1:return a=e.sent(),this.qrCodeString=a.dataURL,[2,this.qrCodeString]}})})},n}(y.a),O=function(l){function n(n,u){var t=l.call(this)||this;return t.repo=n,t.modalCtrl=u,t.onBalance(),t}return Object(g.__extends)(n,l),Object.defineProperty(n.prototype,"wallets",{get:function(){return Y.wallet},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"isNumberOfAddress",{get:function(){return Y.activeAddress},set:function(l){this.repo.activeAccountSet(l),this.onBalance()},enumerable:!0,configurable:!0}),n.prototype.onBalance=function(){var l=this,n=this.wallets[Y.activeAddress];return new Promise(function(u,t){l.eth.getBalance(n.address,function(n,a){return n?t(n):(l.balance=l.utils.fromWei(""+a,"ether"),u(l.balance))})})},n.prototype.presentProfileModal=function(){this.modalCtrl.create(A).present()},n}(y.a),T=function(l){function n(){return null!==l&&l.apply(this,arguments)||this}return Object(g.__extends)(n,l),n}(y.a),S=u(142),L=this&&this.__awaiter||function(l,n,u,t){return new(u||(u=Promise))(function(a,e){function o(l){try{i(t.next(l))}catch(l){e(l)}}function r(l){try{i(t.throw(l))}catch(l){e(l)}}function i(l){l.done?a(l.value):new u(function(n){n(l.value)}).then(o,r)}i((t=t.apply(l,n||[])).next())})},R=this&&this.__generator||function(l,n){function u(u){return function(o){return function(u){if(t)throw new TypeError("Generator is already executing.");for(;r;)try{if(t=1,a&&(e=a[2&u[0]?"return":u[0]?"throw":"next"])&&!(e=e.call(a,u[1])).done)return e;switch(a=0,e&&(u=[0,e.value]),u[0]){case 0:case 1:e=u;break;case 4:return r.label++,{value:u[1],done:!1};case 5:r.label++,a=u[1],u=[0];continue;case 7:u=r.ops.pop(),r.trys.pop();continue;default:if(e=r.trys,!(e=e.length>0&&e[e.length-1])&&(6===u[0]||2===u[0])){r=0;continue}if(3===u[0]&&(!e||u[1]>e[0]&&u[1]<e[3])){r.label=u[1];break}if(6===u[0]&&r.label<e[1]){r.label=e[1],e=u;break}if(e&&r.label<e[2]){r.label=e[2],r.ops.push(u);break}e[2]&&r.ops.pop(),r.trys.pop();continue}u=n.call(l,r)}catch(l){u=[6,l],a=0}finally{t=e=0}if(5&u[0])throw u[1];return{value:u[0]?u[1]:void 0,done:!0}}([u,o])}}var t,a,e,o,r={label:0,sent:function(){if(1&e[0])throw e[1];return e[1]},trys:[],ops:[]};return o={next:u(0),throw:u(1),return:u(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o},I=function(){function l(l,n){var u=this;this.clipboard=l,this.alertCtrl=n,this.numberOfAccaunt=Y.activeAddress,this.address=Y.wallet[Y.activeAddress].address,this.qrcode().then(function(l){u.qrCodeString=l})}return l.prototype.qrcode=function(){return L(this,void 0,void 0,function(){var l,n,u,t;return R(this,function(a){switch(a.label){case 0:return l=new C.a,n=this.address,u=l.toDataUrl({to:n}),[4,u];case 1:return t=a.sent(),[2,t.dataURL]}})})},l.prototype.copyAddress=function(){var l=this.alertCtrl.create({title:"Copied",subTitle:this.address.slice(0,9)+"...",buttons:["OK"]});this.clipboard.copy(this.address),l.present()},l}(),W=function(){return function(){}}(),E=function(l){function n(){var n=l.call(this)||this;return n.pages={home:O,impots:T,details:I,about:W},n.page=n.pages.home,n}return Object(g.__extends)(n,l),n}(y.a),N=this&&this.__awaiter||function(l,n,u,t){return new(u||(u=Promise))(function(a,e){function o(l){try{i(t.next(l))}catch(l){e(l)}}function r(l){try{i(t.throw(l))}catch(l){e(l)}}function i(l){l.done?a(l.value):new u(function(n){n(l.value)}).then(o,r)}i((t=t.apply(l,n||[])).next())})},G=this&&this.__generator||function(l,n){function u(u){return function(o){return function(u){if(t)throw new TypeError("Generator is already executing.");for(;r;)try{if(t=1,a&&(e=a[2&u[0]?"return":u[0]?"throw":"next"])&&!(e=e.call(a,u[1])).done)return e;switch(a=0,e&&(u=[0,e.value]),u[0]){case 0:case 1:e=u;break;case 4:return r.label++,{value:u[1],done:!1};case 5:r.label++,a=u[1],u=[0];continue;case 7:u=r.ops.pop(),r.trys.pop();continue;default:if(e=r.trys,!(e=e.length>0&&e[e.length-1])&&(6===u[0]||2===u[0])){r=0;continue}if(3===u[0]&&(!e||u[1]>e[0]&&u[1]<e[3])){r.label=u[1];break}if(6===u[0]&&r.label<e[1]){r.label=e[1],e=u;break}if(e&&r.label<e[2]){r.label=e[2],r.ops.push(u);break}e[2]&&r.ops.pop(),r.trys.pop();continue}u=n.call(l,r)}catch(l){u=[6,l],a=0}finally{t=e=0}if(5&u[0])throw u[1];return{value:u[0]?u[1]:void 0,done:!0}}([u,o])}}var t,a,e,o,r={label:0,sent:function(){if(1&e[0])throw e[1];return e[1]},trys:[],ops:[]};return o={next:u(0),throw:u(1),return:u(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o},q=function(l){function n(n,u,t,a){var e=l.call(this)||this;return e.alertCtrl=n,e.loadingCtrl=u,e.repo=t,e.navCtrl=a,e.isExisting=e.repo.isNotVirgin(),e.loader=e.loadingCtrl.create({content:"Please wait..."}),e}return Object(g.__extends)(n,l),n.prototype.signUp=function(l,n){return N(this,void 0,void 0,function(){var u,t;return G(this,function(a){switch(a.label){case 0:return u={title:null,subTitle:null,buttons:["OK"]},l!==n?(u.title="password",u.subTitle="Enter the password again",this.alertCtrl.create(u).present(),[2,null]):l.length<3?(u.title="password",u.subTitle="weak password",this.alertCtrl.create(u).present(),[2,null]):[4,this.loader.present()];case 1:return a.sent(),[4,this.utils.randomHex(32)];case 2:return t=a.sent(),[4,this.createTenWallets(t)];case 3:return a.sent(),[4,this.repo.onWriteEntropy(t)];case 4:return a.sent(),[4,this.repo.onWriteWalletObjec(l)];case 5:return a.sent(),this.navCtrl.setRoot(E),[4,this.loader.dismiss()];case 6:return a.sent(),[2]}})})},n.prototype.signIn=function(l){return N(this,void 0,void 0,function(){var n;return G(this,function(u){switch(u.label){case 0:return[4,this.loader.present()];case 1:u.sent(),n={title:"message",subTitle:"Incorrect password",buttons:["OK"]},u.label=2;case 2:return u.trys.push([2,4,,6]),[4,this.repo.onGetWalletsDecrypt(l)];case 3:return u.sent(),[3,6];case 4:return u.sent(),this.alertCtrl.create(n).present(),[4,this.loader.dismiss()];case 5:return u.sent(),[2,null];case 6:return this.repo.activeAccountGet(),this.navCtrl.setRoot(E),[4,this.loader.dismiss()];case 7:return u.sent(),[2]}})})},n}(y.a),V=function(){return function(l,n,u){this.rootPage=q,l.ready().then(function(){n.styleDefault(),u.hide()})}}(),D=function(){return function(){}}(),U=u(92),B=u(597),K=u(598),M=u(599),X=u(600),F=u(601),H=u(602),J=u(603),$=u(604),Q=u(605),ll=u(329),nl=u(47),ul=u(78),tl=u(5),al=u(21),el=u(8),ol=u(1),rl=u(4),il=u(11),sl=u(44),cl=u(24),_l=u(9),dl=h.X({encapsulation:2,styles:[],data:{}}),fl=h.V("ng-component",V,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"ng-component",[],null,null,null,t,dl)),h.Y(1,49152,null,0,V,[rl.a,m.a,v.a],null,null)],null,null)},{},{},[]),pl=u(63),bl=u(107),hl=u(33),gl=u(108),ml=u(55),vl=u(37),yl=u(70),wl=u(23),Yl=u(30),jl=h.X({encapsulation:2,styles:[],data:{}}),Zl=h.V("page-about",W,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"page-about",[],null,null,null,a,jl)),h.Y(1,49152,null,0,W,[],null,null)],null,null)},{},{},[]),kl=u(123),zl=u(153),Cl=u(155),Pl=u(16),xl=u(154),Al=u(75),Ol=u(76),Tl=u(32),Sl=u(19),Ll=u(176),Rl=u(54),Il=u(69),Wl=u(18),El=u(15),Nl=u(36),Gl=u(46),ql=u(52),Vl=u(606),Dl=u(126),Ul=u(22),Bl=u(122),Kl=h.X({encapsulation:2,styles:[],data:{}}),Ml=h.V("page-home",O,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"page-home",[],null,null,null,o,Kl)),h.Y(1,49152,null,0,O,[k,Bl.a],null,null)],null,null)},{},{},[]),Xl=u(162),Fl=u(39),Hl=u(177),Jl=u(62),$l=u(607),Ql=u(120),ln=u(608),nn=u(161),un=h.X({encapsulation:2,styles:[],data:{}}),tn=h.V("page-menu",E,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"page-menu",[],null,null,null,r,un)),h.Y(1,49152,null,0,E,[],null,null)],null,null)},{},{},[]),an=u(210),en=u(77),on=u(74),rn=u(119),sn=h.X({encapsulation:2,styles:[],data:{}}),cn=h.V("page-auth",q,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"page-auth",[],null,null,null,c,sn)),h.Y(1,49152,null,0,q,[on.a,rn.a,k,al.a],null,null)],null,null)},{},{},[]),_n=u(609),dn=u(116),fn=u(166),pn=h.X({encapsulation:2,styles:[],data:{}}),bn=h.V("page-details",I,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"page-details",[],null,null,null,d,pn)),h.Y(1,49152,null,0,I,[S.a,on.a],null,null)],null,null)},{},{},[]),hn=u(157),gn=h.X({encapsulation:2,styles:[],data:{}}),mn=h.V("page-send",A,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"page-send",[],null,null,null,f,gn)),h.Y(1,49152,null,0,A,[on.a,tl.a],null,null)],null,null)},{},{},[]),vn=h.X({encapsulation:2,styles:[],data:{}}),yn=h.V("page-pages-imports",T,function(l){return h._21(0,[(l()(),h.Z(0,0,null,null,1,"page-pages-imports",[],null,null,null,p,vn)),h.Y(1,49152,null,0,T,[],null,null)],null,null)},{},{},[]),wn=u(185),Yn=u(151),jn=u(182),Zn=u(53),kn=u(263),zn=u(94),Cn=u(79),Pn=u(113),xn=u(168),An=u(181),On=u(175),Tn=u(262),Sn=u(183),Ln=u(163),Rn=u(184),In=h.W(D,[U.b],function(l){return h._7([h._8(512,h.i,h.S,[[8,[B.a,K.a,M.a,X.a,F.a,H.a,J.a,$.a,Q.a,fl,Zl,Ml,tn,cn,bn,mn,yn]],[3,h.i],h.s]),h._8(5120,h.r,h._16,[[3,h.r]]),h._8(4608,Pl.l,Pl.k,[h.r,[2,Pl.t]]),h._8(5120,h.b,h._1,[]),h._8(5120,h.p,h._9,[]),h._8(5120,h.q,h._12,[]),h._8(4608,b.c,b.q,[Pl.d]),h._8(6144,h.D,null,[b.c]),h._8(4608,b.f,wn.a,[]),h._8(5120,b.d,function(l,n,u,t,a){return[new b.k(l,n),new b.o(u),new b.n(t,a)]},[Pl.d,h.u,Pl.d,Pl.d,b.f]),h._8(4608,b.e,b.e,[b.d,h.u]),h._8(135680,b.m,b.m,[Pl.d]),h._8(4608,b.l,b.l,[b.e,b.m]),h._8(6144,h.B,null,[b.l]),h._8(6144,b.p,null,[b.m]),h._8(4608,h.G,h.G,[h.u]),h._8(4608,b.h,b.h,[Pl.d]),h._8(4608,b.i,b.i,[Pl.d]),h._8(4608,Ul.k,Ul.k,[]),h._8(4608,Ul.c,Ul.c,[]),h._8(4608,Yn.a,Yn.a,[el.a,ol.a]),h._8(4608,on.a,on.a,[el.a,ol.a]),h._8(4608,jn.a,jn.a,[]),h._8(4608,El.a,El.a,[]),h._8(4608,Zn.a,Zn.a,[rl.a]),h._8(4608,Yl.a,Yl.a,[ol.a,rl.a,h.u,_l.a]),h._8(4608,rn.a,rn.a,[el.a,ol.a]),h._8(5120,Pl.g,kn.b,[Pl.r,[2,Pl.a],ol.a]),h._8(4608,Pl.f,Pl.f,[Pl.g]),h._8(5120,zn.b,zn.d,[el.a,zn.a]),h._8(5120,cl.a,cl.b,[el.a,zn.b,Pl.f,Cn.b,h.i]),h._8(4608,Bl.a,Bl.a,[el.a,ol.a,cl.a]),h._8(4608,Pn.a,Pn.a,[el.a,ol.a]),h._8(4608,xn.a,xn.a,[el.a,ol.a,cl.a]),h._8(4608,An.a,An.a,[ol.a,rl.a,_l.a,el.a,il.l]),h._8(4608,On.a,On.a,[el.a,ol.a]),h._8(4608,sl.a,sl.a,[rl.a,ol.a]),h._8(5120,w.b,w.d,[w.c]),h._8(4608,m.a,m.a,[]),h._8(4608,v.a,v.a,[]),h._8(4608,k,k,[w.b]),h._8(4608,S.a,S.a,[]),h._8(512,Pl.c,Pl.c,[]),h._8(512,h.k,Tn.a,[]),h._8(256,ol.b,{},[]),h._8(1024,Sn.a,Sn.b,[]),h._8(1024,rl.a,rl.b,[b.b,Sn.a,h.u]),h._8(1024,ol.a,ol.c,[ol.b,rl.a]),h._8(512,_l.a,_l.a,[rl.a]),h._8(512,Fl.a,Fl.a,[]),h._8(512,el.a,el.a,[ol.a,rl.a,[2,Fl.a]]),h._8(512,il.l,il.l,[el.a]),h._8(256,zn.a,{links:[]},[]),h._8(512,h.h,h.h,[]),h._8(512,Ln.a,Ln.a,[h.h]),h._8(1024,Cn.b,Cn.c,[Ln.a,h.o]),h._8(1024,h.c,function(l,n,u,t,a,e,o,r,i,s,c,_,d){return[b.s(l),Rn.a(n),jn.b(u,t),An.b(a,e,o,r,i),Cn.d(s,c,_,d)]},[[2,h.t],ol.a,rl.a,_l.a,ol.a,rl.a,_l.a,el.a,il.l,ol.a,zn.a,Cn.b,h.u]),h._8(512,h.d,h.d,[[2,h.c]]),h._8(131584,h.f,h.f,[h.u,h.T,h.o,h.k,h.i,h.d]),h._8(512,h.e,h.e,[h.f]),h._8(512,b.a,b.a,[[3,b.a]]),h._8(512,Ul.j,Ul.j,[]),h._8(512,Ul.d,Ul.d,[]),h._8(512,Ul.i,Ul.i,[]),h._8(512,kn.a,kn.a,[]),h._8(512,w.a,w.a,[]),h._8(512,D,D,[]),h._8(256,U.a,V,[]),h._8(256,Pl.a,"/",[]),h._8(256,w.c,{name:"__mydb",driverOrder:["indexeddb","sqlite","websql"]},[])])});Object(h.M)(),Object(b.j)().bootstrapModuleFactory(In)},423:function(l,n){},425:function(l,n){},466:function(l,n){},469:function(l,n){},572:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t={PROVIDER:"https://ropsten.infura.io/v3/d9877ecb6cf349baa97ca282de1f2ed4"}},80:function(l,n,u){"use strict";(function(l){u.d(n,"a",function(){return b});var t=u(365),a=u.n(t),e=u(444),o=u.n(e),r=u(88),i=u.n(r),s=u(499),c=u.n(s),_=u(572),d=new a.a.providers.HttpProvider(_.a.PROVIDER),f=new a.a(d),p=new c.a(_.a.PROVIDER),b=function(){function n(){var l=this;this._web3=f,this.version=this._web3.version,this.utils=i.a,this.eth=this._web3.eth,this.accounts=p,this.getBlockNumber=new Promise(function(n,u){l._web3.eth.getBlockNumber(function(l,t){return l?u(l):t?n(+t):void 0})})}return n.prototype.walletAddWeb3=function(l){return this._web3.eth.accounts.wallet.add(l)},n.prototype.createTenWallets=function(l){return this.accounts.wallet.create(5,l)},n.prototype.sendTransaction=function(n,u){var t=this,a=new l(u.slice(2),"hex"),e=new o.a(n);e.sign(a);var r="0x"+e.serialize().toString("hex");return new Promise(function(l,n){t.eth.sendRawTransaction(r,function(u,t){return u?n(u):t?l(t):void 0})})},n}()}).call(n,u(10).Buffer)}},[330]);
+webpackJsonp([0],{
+
+/***/ 161:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Repository; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ether_wallet__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_global__ = __webpack_require__(74);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+var Repository = /** @class */ (function (_super) {
+    __extends(Repository, _super);
+    function Repository(_storage) {
+        var _this = _super.call(this) || this;
+        _this._storage = _storage;
+        return _this;
+    }
+    // methods. //
+    Repository.prototype.onWriteEntropy = function (entropy) {
+        /**
+         * @param {entropy}: Save the entropy string, for unlock.
+         */
+        return this._storage.set('entropy', entropy);
+    };
+    Repository.prototype.onGetEntropy = function () {
+        /**
+         * @method: Get decrypt entropy string.
+         * @param {password}: User password string.
+         */
+        return this._storage.get('entropy');
+    };
+    Repository.prototype.onWriteWalletObjec = function (password) {
+        return __awaiter(this, void 0, void 0, function () {
+            var encryptWallets;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        encryptWallets = this.accounts.wallet.encrypt(password);
+                        return [4 /*yield*/, this._storage.set('wallet', JSON.stringify(encryptWallets))];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/, this.walletToRepoWallet()];
+                }
+            });
+        });
+    };
+    Repository.prototype.onGetWalletsDecrypt = function (password) {
+        return __awaiter(this, void 0, void 0, function () {
+            var encryptWallet;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.onGetWalletsEncrypt()];
+                    case 1:
+                        encryptWallet = _a.sent();
+                        this.accounts.wallet.decrypt(encryptWallet, password);
+                        return [2 /*return*/, this.walletToRepoWallet()];
+                }
+            });
+        });
+    };
+    Repository.prototype.walletToRepoWallet = function () {
+        var _this = this;
+        var wallet = this.accounts.wallet;
+        var wallets = [];
+        Object.keys(wallet).forEach(function (key) {
+            if (!isNaN(+key) && !_this.utils.isAddress(key)) {
+                wallets.push({
+                    address: wallet[key].address,
+                    privateKey: wallet[key].privateKey
+                });
+            }
+        });
+        __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].wallet = wallets;
+        return __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].wallet;
+    };
+    Repository.prototype.onGetWalletsEncrypt = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var wallets;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this._storage.get('wallet')];
+                    case 1:
+                        wallets = _a.sent();
+                        return [2 /*return*/, JSON.parse(wallets)];
+                }
+            });
+        });
+    };
+    Repository.prototype.activeAccountSet = function (id) {
+        if (id === void 0) { id = 0; }
+        __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].activeAddress = id;
+        return this._storage.set('active', "" + id);
+    };
+    Repository.prototype.activeAccountGet = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var active;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this._storage.get('active')];
+                    case 1:
+                        active = _a.sent();
+                        __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].activeAddress = +active || 0;
+                        return [2 /*return*/, __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].activeAddress];
+                }
+            });
+        });
+    };
+    Repository.prototype.onClear = function () {
+        this._storage.clear();
+    };
+    Repository.prototype.isNotVirgin = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var valid, err_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this._storage.length()];
+                    case 1:
+                        valid = _a.sent();
+                        return [3 /*break*/, 3];
+                    case 2:
+                        err_1 = _a.sent();
+                        return [2 /*return*/, false];
+                    case 3: return [2 /*return*/, !!valid];
+                }
+            });
+        });
+    };
+    Repository = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */]])
+    ], Repository);
+    return Repository;
+}(__WEBPACK_IMPORTED_MODULE_2__ether_wallet__["a" /* Wallet */]));
+
+//# sourceMappingURL=storage.js.map
+
+/***/ }),
+
+/***/ 172:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 172;
+
+/***/ }),
+
+/***/ 213:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 213;
+
+/***/ }),
+
+/***/ 256:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__service_local_storage__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu_menu__ = __webpack_require__(318);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
+/**
+ * Generated class for the AuthPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AuthPage = /** @class */ (function (_super) {
+    __extends(AuthPage, _super);
+    function AuthPage(alertCtrl, loadingCtrl, repo, navCtrl) {
+        var _this = _super.call(this) || this;
+        _this.alertCtrl = alertCtrl;
+        _this.loadingCtrl = loadingCtrl;
+        _this.repo = repo;
+        _this.navCtrl = navCtrl;
+        _this.isExisting = _this.repo.isNotVirgin();
+        _this.loader = _this.loadingCtrl.create({
+            content: "Please wait..."
+        });
+        return _this;
+        // this.navCtrl.setRoot(MenuPage);
+        // this.repo.onClear();
+    }
+    AuthPage.prototype.signUp = function (pass0, pass1) {
+        return __awaiter(this, void 0, void 0, function () {
+            var alert, entropy;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        alert = {
+                            title: null,
+                            subTitle: null,
+                            buttons: ['OK']
+                        };
+                        if (pass0 !== pass1) {
+                            alert.title = 'password';
+                            alert.subTitle = 'Enter the password again';
+                            this.alertCtrl.create(alert).present();
+                            return [2 /*return*/, null];
+                        }
+                        if (pass0.length < 3) {
+                            alert.title = 'password';
+                            alert.subTitle = 'weak password';
+                            this.alertCtrl.create(alert).present();
+                            return [2 /*return*/, null];
+                        }
+                        return [4 /*yield*/, this.loader.present()];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, this.utils.randomHex(32)];
+                    case 2:
+                        entropy = _a.sent();
+                        return [4 /*yield*/, this.createTenWallets(entropy)];
+                    case 3:
+                        _a.sent();
+                        return [4 /*yield*/, this.repo.onWriteEntropy(entropy)];
+                    case 4:
+                        _a.sent();
+                        return [4 /*yield*/, this.repo.onWriteWalletObjec(pass0)];
+                    case 5:
+                        _a.sent();
+                        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__menu_menu__["a" /* MenuPage */]);
+                        return [4 /*yield*/, this.loader.dismiss()];
+                    case 6:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    AuthPage.prototype.signIn = function (value) {
+        return __awaiter(this, void 0, void 0, function () {
+            var alert, err_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.loader.present()];
+                    case 1:
+                        _a.sent();
+                        alert = {
+                            title: 'message',
+                            subTitle: 'Incorrect password',
+                            buttons: ['OK']
+                        };
+                        _a.label = 2;
+                    case 2:
+                        _a.trys.push([2, 4, , 6]);
+                        return [4 /*yield*/, this.repo.onGetWalletsDecrypt(value)];
+                    case 3:
+                        _a.sent();
+                        return [3 /*break*/, 6];
+                    case 4:
+                        err_1 = _a.sent();
+                        this.alertCtrl.create(alert).present();
+                        return [4 /*yield*/, this.loader.dismiss()];
+                    case 5:
+                        _a.sent();
+                        return [2 /*return*/, null];
+                    case 6: return [4 /*yield*/, this.repo.activeAccountGet()];
+                    case 7:
+                        _a.sent();
+                        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__menu_menu__["a" /* MenuPage */]);
+                        return [4 /*yield*/, this.loader.dismiss()];
+                    case 8:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    AuthPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-auth',template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/pages/auth/auth.html"*/'<!--\n  Generated template for the AuthPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Sign</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngIf="!(isExisting | async)">\n    <ion-item>\n        <ion-input #pass0 type="password" placeholder="Password"></ion-input>\n    </ion-item>\n    <ion-item>\n        <ion-input #pass1 type="password" placeholder="Password Confirm"></ion-input>\n    </ion-item>\n    <button (click)="signUp(pass0.value, pass1.value)" ion-button>sign up</button>\n  </ion-list>\n\n  <ion-list *ngIf="(isExisting | async)">\n      <ion-item>\n          <ion-input #pass0\n                     type="password"\n                     (change)="signIn(pass0.value)"\n                     placeholder="Password"></ion-input>\n      </ion-item>\n      <button (click)="signIn(pass0.value)" ion-button>sign in</button>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/pages/auth/auth.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_3__service_local_storage__["a" /* Repository */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+    ], AuthPage);
+    return AuthPage;
+}(__WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__["a" /* Wallet */]));
+
+//# sourceMappingURL=auth.js.map
+
+/***/ }),
+
+/***/ 318:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_imports_pages_imports__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__details_details__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__about_about__ = __webpack_require__(328);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the MenuPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MenuPage = /** @class */ (function (_super) {
+    __extends(MenuPage, _super);
+    function MenuPage() {
+        var _this = _super.call(this) || this;
+        _this.pages = {
+            home: __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */],
+            impots: __WEBPACK_IMPORTED_MODULE_3__pages_imports_pages_imports__["a" /* PagesImportsPage */],
+            details: __WEBPACK_IMPORTED_MODULE_4__details_details__["a" /* DetailsPage */],
+            about: __WEBPACK_IMPORTED_MODULE_5__about_about__["a" /* AboutPage */]
+        };
+        _this.page = _this.pages.home;
+        return _this;
+    }
+    MenuPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-menu',template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/pages/menu/menu.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button [menuToggle]>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Menu\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only>\n        network: {{net | async}}\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<ion-menu [content]="mycontent">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Wallet</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item (click)="page = pages.home">\n        home\n      </button>\n      <button menuClose ion-item (click)="page = pages.impots">\n        import accaunt\n      </button>\n      <button menuClose ion-item (click)="page = pages.details">\n        details\n      </button>\n      <button menuClose ion-item>\n        network\n      </button>\n      <button menuClose ion-item (click)="page = pages.about">\n        about\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-content padding>\n  <ion-nav #mycontent [root]="page"></ion-nav>\n</ion-content>'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/pages/menu/menu.html"*/,
+        }),
+        __metadata("design:paramtypes", [])
+    ], MenuPage);
+    return MenuPage;
+}(__WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__["a" /* Wallet */]));
+
+//# sourceMappingURL=menu.js.map
+
+/***/ }),
+
+/***/ 319:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_global__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__send_send__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__service_local_storage__ = __webpack_require__(161);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var HomePage = /** @class */ (function (_super) {
+    __extends(HomePage, _super);
+    function HomePage(repo, modalCtrl) {
+        var _this = _super.call(this) || this;
+        _this.repo = repo;
+        _this.modalCtrl = modalCtrl;
+        _this.onBalance();
+        return _this;
+    }
+    Object.defineProperty(HomePage.prototype, "wallets", {
+        get: function () {
+            return __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].wallet;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(HomePage.prototype, "isNumberOfAddress", {
+        get: function () {
+            return __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].activeAddress;
+        },
+        set: function (value) {
+            this.repo.activeAccountSet(value);
+            this.onBalance();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    HomePage.prototype.onBalance = function () {
+        var _this = this;
+        /**
+         * @method: Balance of address update.
+         */
+        var address = this.wallets[__WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].activeAddress];
+        return new Promise(function (resolve, reject) {
+            _this.eth.getBalance(address.address, function (err, balance) {
+                if (err) {
+                    return reject(err);
+                }
+                _this.balance = _this.utils.fromWei("" + balance, 'ether');
+                return resolve(_this.balance);
+            });
+        });
+    };
+    HomePage.prototype.presentProfileModal = function () {
+        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__send_send__["a" /* SendPage */]);
+        profileModal.present();
+    };
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/pages/home/home.html"*/'<ion-content>\n  <ion-card>\n      <ion-card-header>\n        current block: {{getBlockNumber | async}}\n      </ion-card-header>\n      <ion-card-content>\n        balance: {{balance}} ETH\n      </ion-card-content>\n    </ion-card>\n\n  <ion-grid>\n    <ion-row justify-content-center>\n      <div>\n        <button (click)="presentProfileModal()"\n            ion-button color="secondary">\n          send\n        </button>\n      </div>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n\n<ion-footer>\n  <ion-list>\n    <ion-item>\n      <ion-label>\n          address: \n      </ion-label>\n      <ion-select [(ngModel)]="isNumberOfAddress"\n                  interface="action-sheet">\n        <ion-option *ngFor="let obj of wallets; let i=index"\n                    [value]="i">{{i + 1}} {{obj.address.slice(0, 12)}}...</ion-option>\n      </ion-select> \n    </ion-item>\n  </ion-list>\n</ion-footer>'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/pages/home/home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__service_local_storage__["a" /* Repository */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]])
+    ], HomePage);
+    return HomePage;
+}(__WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__["a" /* Wallet */]));
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 320:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__service_ether_wallet__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_global__ = __webpack_require__(74);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
+/**
+ * Generated class for the SendPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SendPage = /** @class */ (function (_super) {
+    __extends(SendPage, _super);
+    function SendPage(alertCtrl, clipboard, viewCtrl) {
+        var _this = _super.call(this) || this;
+        _this.alertCtrl = alertCtrl;
+        _this.clipboard = clipboard;
+        _this.viewCtrl = viewCtrl;
+        _this.address = __WEBPACK_IMPORTED_MODULE_5__app_global__["a" /* data */].wallet[__WEBPACK_IMPORTED_MODULE_5__app_global__["a" /* data */].activeAddress].address;
+        _this.privateKey = __WEBPACK_IMPORTED_MODULE_5__app_global__["a" /* data */].wallet[__WEBPACK_IMPORTED_MODULE_5__app_global__["a" /* data */].activeAddress].privateKey;
+        return _this;
+    }
+    SendPage.prototype.txSend = function (txData) {
+        return __awaiter(this, void 0, void 0, function () {
+            var nonce, data_1, hash, err_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.eth.getTransactionCount(this.address)];
+                    case 1:
+                        nonce = _a.sent();
+                        _a.label = 2;
+                    case 2:
+                        _a.trys.push([2, 4, , 5]);
+                        data_1 = {
+                            nonce: nonce,
+                            to: txData.to,
+                            from: "" + this.address,
+                            gasLimit: +txData.gasLimit,
+                            gasPrice: +this.utils.toWei(txData.gasPrice.toString(), 'Gwei'),
+                            value: +this.utils.toWei(txData.value.toString(), 'ether')
+                        };
+                        return [4 /*yield*/, this.sendTransaction(data_1, this.privateKey)];
+                    case 3:
+                        hash = _a.sent();
+                        this.alertCtrl.create({
+                            title: 'Transaction',
+                            subTitle: 'hash created and copied to clipboard.',
+                            buttons: ['OK']
+                        }).present();
+                        this.clipboard.copy(hash);
+                        return [2 /*return*/, hash];
+                    case 4:
+                        err_1 = _a.sent();
+                        this.alertCtrl.create({
+                            title: 'Error',
+                            subTitle: err_1.message,
+                            buttons: ['OK']
+                        }).present();
+                        return [2 /*return*/, null];
+                    case 5: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    SendPage.prototype.qrcode = function (txData) {
+        return __awaiter(this, void 0, void 0, function () {
+            var qr, data_2, base64, err_2;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        qr = new __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code___default.a();
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 3, , 4]);
+                        data_2 = {
+                            from: this.address,
+                            to: txData.to,
+                            value: this.utils.toWei(txData.value.toString(), 'ether')
+                        };
+                        return [4 /*yield*/, qr.toDataUrl(data_2)];
+                    case 2:
+                        base64 = _a.sent();
+                        this.qrCodeString = base64.dataURL;
+                        return [2 /*return*/, this.qrCodeString];
+                    case 3:
+                        err_2 = _a.sent();
+                        this.alertCtrl.create({
+                            title: 'Error',
+                            subTitle: 'Transaction data error',
+                            buttons: ['OK']
+                        }).present();
+                        return [2 /*return*/, null];
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    SendPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-send',template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/pages/send/send.html"*/'<!--\n  Generated template for the SendPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="dark">\n    <ion-title>Creating a transaction!</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-item>\n    <ion-input type="text"\n               #to\n               placeholder="Recipient Address">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input type="number"\n               #value\n               placeholder="Amount">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input type="number"\n               #data\n               placeholder="TRANSACTION DATA (OPTIONAL)">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary">Gas Price in Gwei</ion-label>\n    <ion-input [value]="7" #gasPrice type="number"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary">Gas Limit</ion-label>\n    <ion-input [value]="21000" #gasLimit type="number"></ion-input>\n  </ion-item>\n\n  <ion-grid>\n    <ion-row justify-content-center>\n\n      <ion-col>\n        <button ion-button\n                (click)="txSend({\n                  to: to.value, value: value.value,\n                  data: data.value, gasPrice: gasPrice.value,\n                  gasLimit: gasLimit.value\n                })"\n                color="secondary">send</button>\n\n        <button (click)="qrcode({\n          to: to.value, value: value.value,\n          data: data.value, gasPrice: gasPrice.value,\n          gasLimit: gasLimit.value\n        })" ion-button color="dark">qr code</button>\n\n        <button (click)="viewCtrl.dismiss()" ion-button color="danger">reject</button>\n      </ion-col>\n    \n    </ion-row>\n      \n      <ion-row justify-content-center>\n        <div class="qrCode"\n             [style.background]="\'url(\' + qrCodeString + \')\'">\n        </div>\n      </ion-row>\n  </ion-grid>\n\n</ion-content>'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/pages/send/send.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__["a" /* Clipboard */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
+    ], SendPage);
+    return SendPage;
+}(__WEBPACK_IMPORTED_MODULE_4__service_ether_wallet__["a" /* Wallet */]));
+
+//# sourceMappingURL=send.js.map
+
+/***/ }),
+
+/***/ 326:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagesImportsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__ = __webpack_require__(52);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var PagesImportsPage = /** @class */ (function (_super) {
+    __extends(PagesImportsPage, _super);
+    function PagesImportsPage() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    PagesImportsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-pages-imports',template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/pages/pages-imports/pages-imports.html"*/'<ion-content>\n  <ion-grid>\n    <ion-row>\n      <ion-item>\n        <ion-label fixed>private key</ion-label>\n        <ion-input #key type="text" value=""></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-row>\n      <button ion-button\n              color="secondary"\n              outline>import</button>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/pages/pages-imports/pages-imports.html"*/,
+        })
+    ], PagesImportsPage);
+    return PagesImportsPage;
+}(__WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__["a" /* Wallet */]));
+
+//# sourceMappingURL=pages-imports.js.map
+
+/***/ }),
+
+/***/ 327:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_clipboard__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global__ = __webpack_require__(74);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+/**
+ * Generated class for the DetailsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var DetailsPage = /** @class */ (function () {
+    function DetailsPage(clipboard, alertCtrl) {
+        var _this = this;
+        this.clipboard = clipboard;
+        this.alertCtrl = alertCtrl;
+        this.numberOfAccaunt = __WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].activeAddress;
+        this.address = __WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].wallet[__WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].activeAddress].address;
+        this.qrcode().then(function (str) {
+            _this.qrCodeString = str;
+        });
+    }
+    DetailsPage.prototype.qrcode = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var qr, address, qrCode, base64;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        qr = new __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code___default.a();
+                        address = this.address;
+                        qrCode = qr.toDataUrl({
+                            to: address
+                        });
+                        return [4 /*yield*/, qrCode];
+                    case 1:
+                        base64 = _a.sent();
+                        return [2 /*return*/, base64.dataURL];
+                }
+            });
+        });
+    };
+    DetailsPage.prototype.copyAddress = function () {
+        var alert = this.alertCtrl.create({
+            title: 'Copied',
+            subTitle: this.address.slice(0, 9) + '...',
+            buttons: ['OK']
+        });
+        this.clipboard.copy(this.address);
+        alert.present();
+    };
+    DetailsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-details',template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/pages/details/details.html"*/'<!--\n  Generated template for the DetailsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>details</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <ion-list>\n        <ion-item>\n          <ion-note item-start>\n            Address {{numberOfAccaunt}}:\n          </ion-note>\n          {{address}}\n          <ion-note item-end>\n              <button (click)="copyAddress()"\n                      ion-button color="secondary">Copy</button>\n          </ion-note>\n        </ion-item>\n      </ion-list>\n\n  <ion-grid>\n      <ion-row justify-content-center>\n        <div *ngIf="qrCodeString">\n          <ion-img width="150"height="150"\n                  src="{{qrCodeString}}">\n          </ion-img>\n        </div>\n      </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/pages/details/details.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_clipboard__["a" /* Clipboard */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
+    ], DetailsPage);
+    return DetailsPage;
+}());
+
+//# sourceMappingURL=details.js.map
+
+/***/ }),
+
+/***/ 328:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AboutPage = /** @class */ (function () {
+    function AboutPage() {
+    }
+    AboutPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-about',template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/pages/about/about.html"*/
+        })
+    ], AboutPage);
+    return AboutPage;
+}());
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(352);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 352:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_pages_imports_pages_imports__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_auth_auth__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_details_details__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_send_send__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__service_local_storage__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__global__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_storage__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_clipboard__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_http__ = __webpack_require__(619);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPage */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_pages_imports_pages_imports__["a" /* PagesImportsPage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__["a" /* MenuPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_auth_auth__["a" /* AuthPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_details_details__["a" /* DetailsPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_send_send__["a" /* SendPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
+                    links: []
+                }),
+                __WEBPACK_IMPORTED_MODULE_15__ionic_storage__["a" /* IonicStorageModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__global__["b" /* storageConfig */])
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPage */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__["a" /* MenuPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_auth_auth__["a" /* AuthPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_details_details__["a" /* DetailsPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_send_send__["a" /* SendPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_pages_imports_pages_imports__["a" /* PagesImportsPage */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_11__service_local_storage__["a" /* Repository */],
+                __WEBPACK_IMPORTED_MODULE_16__ionic_native_clipboard__["a" /* Clipboard */],
+                __WEBPACK_IMPORTED_MODULE_17__ionic_native_http__["a" /* HTTP */],
+                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 395:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_auth_auth__ = __webpack_require__(256);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MyApp = /** @class */ (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_auth_auth__["a" /* AuthPage */];
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.styleDefault();
+            splashScreen.hide();
+        });
+    }
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Rinat/ionic/ether-wallet/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/Rinat/ionic/ether-wallet/src/app/app.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 411:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 431:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 433:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 500:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 52:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(Buffer) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Wallet; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_web3__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_web3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_web3__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ethereumjs_tx__ = __webpack_require__(574);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ethereumjs_tx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ethereumjs_tx__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(593);
+
+
+
+var web3 = new __WEBPACK_IMPORTED_MODULE_0_web3___default.a(__WEBPACK_IMPORTED_MODULE_2__config__["a" /* config */].ROPSTEN);
+var Wallet = /** @class */ (function () {
+    function Wallet() {
+        this._web3 = web3;
+        this.version = this._web3.version;
+        this.utils = this._web3.utils;
+        this.eth = this._web3.eth;
+        this.accounts = this._web3.eth.accounts;
+        this.getBlockNumber = this._web3.eth.getBlockNumber();
+        this.net = this.eth.net.getId().then(function (id) {
+            /**
+             * @property: get network.
+             */
+            switch (id) {
+                case 1: return 'mainnet';
+                case 3: return 'ropsten';
+                case 42: return 'kovan';
+                case 4: return 'rinkeby';
+                default: return null;
+            }
+        });
+    }
+    Wallet.prototype.walletAddWeb3 = function (privateKey) {
+        return this._web3.eth.accounts.wallet.add(privateKey);
+    };
+    Wallet.prototype.createTenWallets = function (entropy) {
+        return this.accounts.wallet.create(5, entropy);
+    };
+    Wallet.prototype.sendTransaction = function (data, privateKey) {
+        var _this = this;
+        /**
+         * @param {data}: Data object for Transaction.
+         * @param {privateKey}: PrivateKey for accaunt.
+         */
+        var privateKeyBufer = new Buffer(privateKey.slice(2), 'hex');
+        var tx = new __WEBPACK_IMPORTED_MODULE_1_ethereumjs_tx___default.a(data);
+        tx.sign(privateKeyBufer);
+        var serializedTx = tx.serialize();
+        var txInHex = "0x" + serializedTx.toString('hex');
+        return new Promise(function (resolve, reject) {
+            _this._web3.eth.sendSignedTransaction(txInHex, function (err, hash) {
+                if (err) {
+                    return reject(err);
+                }
+                if (hash) {
+                    return resolve(hash);
+                }
+            });
+        });
+    };
+    return Wallet;
+}());
+
+//# sourceMappingURL=wallet.js.map
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(5).Buffer))
+
+/***/ }),
+
+/***/ 593:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export INFURA */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return config; });
+var INFURA = function (net) {
+    if (net === void 0) { net = 'mainnet'; }
+    return "https://" + net + ".infura.io/v3/d9877ecb6cf349baa97ca282de1f2ed4";
+};
+var config = {
+    ROPSTEN: INFURA('ropsten'),
+    MAINNET: INFURA(),
+    KOVAN: INFURA('kovan'),
+    RINKEBY: INFURA('rinkeby')
+};
+//# sourceMappingURL=config.js.map
+
+/***/ }),
+
+/***/ 74:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return data; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return storageConfig; });
+var data = {
+    activeAddress: 0
+};
+var storageConfig = {
+    name: '__mydb',
+    driverOrder: ['indexeddb', 'sqlite', 'websql']
+};
+//# sourceMappingURL=global.js.map
+
+/***/ })
+
+},[329]);
+//# sourceMappingURL=main.js.map

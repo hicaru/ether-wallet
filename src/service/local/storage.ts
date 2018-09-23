@@ -34,7 +34,7 @@ export class Repository extends Wallet {
      * @method: Writes to the database json strign.
      * @param {wallets}: Is array ethereum addresses.
      */
-    const encryptWallets = this.eth.accounts.wallet.encrypt(password);
+    const encryptWallets = this.accounts.wallet.encrypt(password);
     await this._storage.set('wallet', JSON.stringify(encryptWallets));
     
     return this.walletToRepoWallet();
@@ -61,12 +61,6 @@ export class Repository extends Wallet {
 
     data.wallet = wallets;
     return data.wallet;
-  }
-
-  public async onSign(): Promise<void> {
-    const entropy = await this._storage.get('entropy');
-    const test = await this.accounts.sign(entropy, entropy);
-    console.log(test);
   }
 
   public async onGetWalletsEncrypt(): Promise<object[]> {

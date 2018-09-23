@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
 import { ModalController } from 'ionic-angular';
 
 import { Wallet } from '../../service/ether/wallet';
@@ -8,6 +7,7 @@ import { data } from '../../app/global';
 import { Repositories } from '../../service/interfaces';
 import { SendPage } from '../send/send';
 import { Repository } from '../../service/local/storage';
+
 
 @Component({
   selector: 'page-home',
@@ -28,13 +28,12 @@ export class HomePage extends Wallet {
   public balance: number;
 
   constructor(private repo: Repository,
-              public navCtrl: NavController,
               public modalCtrl: ModalController) {
     super();
     this.onBalance();
   }
 
-  public async onBalance(): Promise<void> {
+  public async onBalance(): Promise<number> {
     /**
      * @method: Balance of address update.
      */
@@ -42,6 +41,7 @@ export class HomePage extends Wallet {
     const balance = await this.eth.getBalance(address.address);
 
     this.balance = this.utils.fromWei(`${balance}`, 'ether');
+    return this.balance;
   }
 
   presentProfileModal() {

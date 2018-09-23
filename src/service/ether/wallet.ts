@@ -20,18 +20,6 @@ export class Wallet {
   public utils = utils;
   public eth = this._web3.eth;
   public accounts = accounts;
-  public net: Promise<string> = new Promise((resolve, reject) => {
-    /**
-     * @property: get network.
-     */
-    switch (this._web3.version.network) {
-      case '1': resolve('main');
-      case '3': resolve('ropsten');
-      case '42': resolve('kovan');
-      case '4': resolve('rinkeby');
-      default: reject('none provider');
-    }
-  });
   public getBlockNumber: Promise<number> = new Promise((resolve, reject) => {
     this._web3.eth.getBlockNumber((err, block) => {
       if (err) {
@@ -50,7 +38,7 @@ export class Wallet {
   }
 
   protected createTenWallets(entropy: string): Ethereum.IWallet[] {
-    return this._web3.eth.accounts.wallet.create(5 ,entropy);
+    return this.accounts.wallet.create(5 ,entropy);
   }
 
   protected sendTransaction(data: Ethereum.ITxData, privateKey: string): Promise<string> {

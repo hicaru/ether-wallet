@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams } from 'ionic-angular';
 import { Clipboard } from '@ionic-native/clipboard';
 import { AlertController } from 'ionic-angular';
 
@@ -24,9 +23,7 @@ export class DetailsPage {
   public address = data.wallet[data.activeAddress].address;
   public qrCodeString: string;
 
-  constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              private clipboard: Clipboard,
+  constructor(private clipboard: Clipboard,
               private alertCtrl: AlertController) {
     this.qrcode().then(str => {
       this.qrCodeString = str;

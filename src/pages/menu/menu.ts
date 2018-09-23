@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
 
 import { Wallet } from '../../service/ether/wallet';
 import { HomePage } from '../home/home';
@@ -29,8 +28,7 @@ export class MenuPage extends Wallet {
   
   public page = this.pages.home;
 
-  constructor(public navCtrl: NavController,
-              public navParams: NavParams) {
+  constructor() {
     super();
   }
 

@@ -6,7 +6,7 @@ webpackJsonp([0],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Repository; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ether_wallet__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_global__ = __webpack_require__(84);
 var __extends = (this && this.__extends) || (function () {
@@ -94,7 +94,7 @@ var Repository = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        encryptWallets = this.eth.accounts.wallet.encrypt(password);
+                        encryptWallets = this.accounts.wallet.encrypt(password);
                         return [4 /*yield*/, this._storage.set('wallet', JSON.stringify(encryptWallets))];
                     case 1:
                         _a.sent();
@@ -131,23 +131,6 @@ var Repository = /** @class */ (function (_super) {
         });
         __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].wallet = wallets;
         return __WEBPACK_IMPORTED_MODULE_3__app_global__["a" /* data */].wallet;
-    };
-    Repository.prototype.onSign = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var entropy, test;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this._storage.get('entropy')];
-                    case 1:
-                        entropy = _a.sent();
-                        return [4 /*yield*/, this.accounts.sign(entropy, entropy)];
-                    case 2:
-                        test = _a.sent();
-                        console.log(test);
-                        return [2 /*return*/];
-                }
-            });
-        });
     };
     Repository.prototype.onGetWalletsEncrypt = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -214,7 +197,7 @@ var Repository = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 187:
+/***/ 186:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -227,11 +210,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 187;
+webpackEmptyAsyncContext.id = 186;
 
 /***/ }),
 
-/***/ 228:
+/***/ 227:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -244,17 +227,17 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 228;
+webpackEmptyAsyncContext.id = 227;
 
 /***/ }),
 
-/***/ 271:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__service_local_storage__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu_menu__ = __webpack_require__(331);
@@ -326,13 +309,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
  */
 var AuthPage = /** @class */ (function (_super) {
     __extends(AuthPage, _super);
-    function AuthPage(alertCtrl, loadingCtrl, repo, navCtrl, navParams) {
+    function AuthPage(alertCtrl, loadingCtrl, repo, navCtrl) {
         var _this = _super.call(this) || this;
         _this.alertCtrl = alertCtrl;
         _this.loadingCtrl = loadingCtrl;
         _this.repo = repo;
         _this.navCtrl = navCtrl;
-        _this.navParams = navParams;
         _this.isExisting = _this.repo.isNotVirgin();
         _this.loader = _this.loadingCtrl.create({
             content: "Please wait..."
@@ -367,15 +349,21 @@ var AuthPage = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.loader.present()];
                     case 1:
                         _a.sent();
-                        entropy = this.utils.randomHex(16);
-                        this.createTenWallets(entropy);
-                        this.repo.onWriteEntropy(entropy);
-                        return [4 /*yield*/, this.repo.onWriteWalletObjec(pass0)];
+                        return [4 /*yield*/, this.utils.randomHex(32)];
                     case 2:
+                        entropy = _a.sent();
+                        return [4 /*yield*/, this.createTenWallets(entropy)];
+                    case 3:
+                        _a.sent();
+                        return [4 /*yield*/, this.repo.onWriteEntropy(entropy)];
+                    case 4:
+                        _a.sent();
+                        return [4 /*yield*/, this.repo.onWriteWalletObjec(pass0)];
+                    case 5:
                         _a.sent();
                         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__menu_menu__["a" /* MenuPage */]);
                         return [4 /*yield*/, this.loader.dismiss()];
-                    case 3:
+                    case 6:
                         _a.sent();
                         return [2 /*return*/];
                 }
@@ -427,8 +415,7 @@ var AuthPage = /** @class */ (function (_super) {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_3__service_local_storage__["a" /* Repository */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], AuthPage);
     return AuthPage;
 }(__WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__["a" /* Wallet */]));
@@ -443,12 +430,11 @@ var AuthPage = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_imports_pages_imports__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__details_details__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_about__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_imports_pages_imports__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__details_details__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__about_about__ = __webpack_require__(342);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -474,7 +460,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /**
  * Generated class for the MenuPage page.
  *
@@ -483,28 +468,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var MenuPage = /** @class */ (function (_super) {
     __extends(MenuPage, _super);
-    function MenuPage(navCtrl, navParams) {
+    function MenuPage() {
         var _this = _super.call(this) || this;
-        _this.navCtrl = navCtrl;
-        _this.navParams = navParams;
         _this.pages = {
-            home: __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */],
-            impots: __WEBPACK_IMPORTED_MODULE_4__pages_imports_pages_imports__["a" /* PagesImportsPage */],
-            details: __WEBPACK_IMPORTED_MODULE_5__details_details__["a" /* DetailsPage */],
-            about: __WEBPACK_IMPORTED_MODULE_6__about_about__["a" /* AboutPage */]
+            home: __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */],
+            impots: __WEBPACK_IMPORTED_MODULE_3__pages_imports_pages_imports__["a" /* PagesImportsPage */],
+            details: __WEBPACK_IMPORTED_MODULE_4__details_details__["a" /* DetailsPage */],
+            about: __WEBPACK_IMPORTED_MODULE_5__about_about__["a" /* AboutPage */]
         };
         _this.page = _this.pages.home;
         return _this;
     }
     MenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-menu',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/menu/menu.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button [menuToggle]>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Menu\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only>\n        network: {{net | async}}\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<ion-menu [content]="mycontent">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Wallet</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item (click)="page = pages.home">\n          home\n      </button>\n      <button menuClose ion-item (click)="page = pages.impots">\n        import accaunt\n      </button>\n      <button menuClose ion-item (click)="page = pages.details">\n        details\n      </button>\n      <button menuClose ion-item>\n        network\n      </button>\n      <button menuClose ion-item (click)="page = pages.about">\n        about\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-content padding>\n  <ion-nav #mycontent [root]="page"></ion-nav>\n</ion-content>'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/menu/menu.html"*/,
+            selector: 'page-menu',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/menu/menu.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button [menuToggle]>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Menu\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only>\n        network: main\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<ion-menu [content]="mycontent">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Wallet</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item (click)="page = pages.home">\n        home\n      </button>\n      <button menuClose ion-item (click)="page = pages.impots">\n        import accaunt\n      </button>\n      <button menuClose ion-item (click)="page = pages.details">\n        details\n      </button>\n      <button menuClose ion-item>\n        network\n      </button>\n      <button menuClose ion-item (click)="page = pages.about">\n        about\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-content padding>\n  <ion-nav #mycontent [root]="page"></ion-nav>\n</ion-content>'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/menu/menu.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [])
     ], MenuPage);
     return MenuPage;
-}(__WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__["a" /* Wallet */]));
+}(__WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__["a" /* Wallet */]));
 
 //# sourceMappingURL=menu.js.map
 
@@ -516,7 +498,7 @@ var MenuPage = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__service_ether_wallet__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_global__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__send_send__ = __webpack_require__(333);
@@ -581,13 +563,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-
 var HomePage = /** @class */ (function (_super) {
     __extends(HomePage, _super);
-    function HomePage(repo, navCtrl, modalCtrl) {
+    function HomePage(repo, modalCtrl) {
         var _this = _super.call(this) || this;
         _this.repo = repo;
-        _this.navCtrl = navCtrl;
         _this.modalCtrl = modalCtrl;
         _this.onBalance();
         return _this;
@@ -621,7 +601,7 @@ var HomePage = /** @class */ (function (_super) {
                     case 1:
                         balance = _a.sent();
                         this.balance = this.utils.fromWei("" + balance, 'ether');
-                        return [2 /*return*/];
+                        return [2 /*return*/, this.balance];
                 }
             });
         });
@@ -635,7 +615,6 @@ var HomePage = /** @class */ (function (_super) {
             selector: 'page-home',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/home/home.html"*/'<ion-content>\n  <ion-card>\n      <ion-card-header>\n        current block: {{getBlockNumber | async}}\n      </ion-card-header>\n      <ion-card-content>\n        balance: {{balance}} ETH\n      </ion-card-content>\n    </ion-card>\n\n  <ion-grid>\n    <ion-row justify-content-center>\n      <div>\n        <button (click)="presentProfileModal()"\n            ion-button color="secondary">\n          send\n        </button>\n      </div>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n\n<ion-footer>\n  <ion-list>\n    <ion-item>\n      <ion-label>\n          address: \n      </ion-label>\n      <ion-select [(ngModel)]="isNumberOfAddress"\n                  interface="action-sheet">\n        <ion-option *ngFor="let obj of wallets; let i=index"\n                    [value]="i">{{i + 1}} {{obj.address.slice(0, 12)}}...</ion-option>\n      </ion-select> \n    </ion-item>\n  </ion-list>\n</ion-footer>'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__service_local_storage__["a" /* Repository */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]])
     ], HomePage);
     return HomePage;
@@ -651,7 +630,7 @@ var HomePage = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ethereum_qr_code__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ethereum_qr_code___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ethereum_qr_code__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__service_ether_wallet__ = __webpack_require__(56);
@@ -723,12 +702,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
  */
 var SendPage = /** @class */ (function (_super) {
     __extends(SendPage, _super);
-    function SendPage(alertCtrl, navCtrl, viewCtrl, navParams) {
+    function SendPage(alertCtrl, viewCtrl) {
         var _this = _super.call(this) || this;
         _this.alertCtrl = alertCtrl;
-        _this.navCtrl = navCtrl;
         _this.viewCtrl = viewCtrl;
-        _this.navParams = navParams;
         _this.address = __WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].wallet[__WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].activeAddress].address;
         _this.privateKey = __WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].wallet[__WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].activeAddress].privateKey;
         return _this;
@@ -794,12 +771,10 @@ var SendPage = /** @class */ (function (_super) {
     };
     SendPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-send',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/send/send.html"*/'<!--\n  Generated template for the SendPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="dark">\n    <ion-title>Creating a transaction!</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-item>\n    <ion-input type="text"\n               #to\n               value="0x68a8191add50d107BB8b25f3Feea172c35Cf2685"\n               placeholder="Recipient Address">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input type="number"\n               #value\n               value="0.1"\n               placeholder="Amount">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input type="number"\n               #data\n               placeholder="TRANSACTION DATA (OPTIONAL)">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary">Gas Price in Gwei</ion-label>\n    <ion-input [value]="7" #gasPrice type="number"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary">Gas Limit</ion-label>\n    <ion-input [value]="21000" #gasLimit type="number"></ion-input>\n  </ion-item>\n\n  <ion-grid>\n    <ion-row justify-content-center>\n\n      <ion-col col-4>\n        <button ion-button\n                (click)="txSend({\n                  to: to.value, value: value.value,\n                  data: data.value, gasPrice: gasPrice.value,\n                  gasLimit: gasLimit.value\n                })"\n                color="secondary">send</button>\n\n        <button (click)="qrcode({\n          to: to.value, value: value.value,\n          data: data.value, gasPrice: gasPrice.value,\n          gasLimit: gasLimit.value\n        })" ion-button color="dark">qr code</button>\n\n        <button (click)="viewCtrl.dismiss()" ion-button color="danger">reject</button>\n      </ion-col>\n    \n      </ion-row>\n      \n      <ion-row justify-content-center>\n        <div class="qrCode"\n             [style.background]="\'url(\' + qrCodeString + \')\'">\n        </div>\n      </ion-row>\n  </ion-grid>\n\n</ion-content>'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/send/send.html"*/,
+            selector: 'page-send',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/send/send.html"*/'<!--\n  Generated template for the SendPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="dark">\n    <ion-title>Creating a transaction!</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-item>\n    <ion-input type="text"\n               #to\n               placeholder="Recipient Address">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input type="number"\n               #value\n               placeholder="Amount">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input type="number"\n               #data\n               placeholder="TRANSACTION DATA (OPTIONAL)">\n    </ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary">Gas Price in Gwei</ion-label>\n    <ion-input [value]="7" #gasPrice type="number"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary">Gas Limit</ion-label>\n    <ion-input [value]="21000" #gasLimit type="number"></ion-input>\n  </ion-item>\n\n  <ion-grid>\n    <ion-row justify-content-center>\n\n      <ion-col col-4>\n        <button ion-button\n                (click)="txSend({\n                  to: to.value, value: value.value,\n                  data: data.value, gasPrice: gasPrice.value,\n                  gasLimit: gasLimit.value\n                })"\n                color="secondary">send</button>\n\n        <button (click)="qrcode({\n          to: to.value, value: value.value,\n          data: data.value, gasPrice: gasPrice.value,\n          gasLimit: gasLimit.value\n        })" ion-button color="dark">qr code</button>\n\n        <button (click)="viewCtrl.dismiss()" ion-button color="danger">reject</button>\n      </ion-col>\n    \n      </ion-row>\n      \n      <ion-row justify-content-center>\n        <div class="qrCode"\n             [style.background]="\'url(\' + qrCodeString + \')\'">\n        </div>\n      </ion-row>\n  </ion-grid>\n\n</ion-content>'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/send/send.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
     ], SendPage);
     return SendPage;
 }(__WEBPACK_IMPORTED_MODULE_3__service_ether_wallet__["a" /* Wallet */]));
@@ -814,9 +789,7 @@ var SendPage = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagesImportsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__service_ether_wallet__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__ = __webpack_require__(56);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -833,114 +806,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
 
 
-
-
-
-// import { Ethereum } from '../../service/interfaces';
 var PagesImportsPage = /** @class */ (function (_super) {
     __extends(PagesImportsPage, _super);
-    function PagesImportsPage(navCtrl, alertCtrl, _storage) {
-        var _this = _super.call(this) || this;
-        _this.navCtrl = navCtrl;
-        _this.alertCtrl = alertCtrl;
-        _this._storage = _storage;
-        _this.wallets = [];
-        _this.getWallets();
-        return _this;
+    function PagesImportsPage() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    PagesImportsPage.prototype.getWallets = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            var keys, _a;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
-                    case 0: return [4 /*yield*/, this._storage.keys()];
-                    case 1:
-                        keys = _b.sent();
-                        _a = this;
-                        return [4 /*yield*/, keys.map(function (key) { return __awaiter(_this, void 0, void 0, function () {
-                                var _a;
-                                return __generator(this, function (_b) {
-                                    switch (_b.label) {
-                                        case 0:
-                                            _a = key + ": ";
-                                            return [4 /*yield*/, this._storage.get(key)];
-                                        case 1: return [2 /*return*/, _a + (_b.sent())];
-                                    }
-                                });
-                            }); })];
-                    case 2:
-                        _a.wallets = _b.sent();
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    PagesImportsPage.prototype.onPrivateKey = function (value) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                return [2 /*return*/];
-            });
-        });
-    };
-    PagesImportsPage.prototype.test = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this._storage.clear();
-                return [2 /*return*/];
-            });
-        });
-    };
     PagesImportsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pages-imports',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/pages-imports/pages-imports.html"*/'<ion-content>\n  <ion-grid>\n    <ion-row>\n      <ion-item>\n        <ion-label fixed>private key</ion-label>\n        <ion-input #key type="text" value=""></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-row>\n      <button ion-button\n              (click)="onPrivateKey(key.value)"\n              color="secondary"\n              outline>import</button>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/pages-imports/pages-imports.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+            selector: 'page-pages-imports',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/pages-imports/pages-imports.html"*/'<ion-content>\n  <ion-grid>\n    <ion-row>\n      <ion-item>\n        <ion-label fixed>private key</ion-label>\n        <ion-input #key type="text" value=""></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-row>\n      <button ion-button\n              color="secondary"\n              outline>import</button>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/pages-imports/pages-imports.html"*/,
+        })
     ], PagesImportsPage);
     return PagesImportsPage;
-}(__WEBPACK_IMPORTED_MODULE_3__service_ether_wallet__["a" /* Wallet */]));
+}(__WEBPACK_IMPORTED_MODULE_1__service_ether_wallet__["a" /* Wallet */]));
 
 //# sourceMappingURL=pages-imports.js.map
 
@@ -952,8 +831,8 @@ var PagesImportsPage = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_clipboard__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ethereum_qr_code__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global__ = __webpack_require__(84);
@@ -1006,7 +885,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-
 /**
  * Generated class for the DetailsPage page.
  *
@@ -1014,10 +892,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
  * Ionic pages and navigation.
  */
 var DetailsPage = /** @class */ (function () {
-    function DetailsPage(navCtrl, navParams, clipboard, alertCtrl) {
+    function DetailsPage(clipboard, alertCtrl) {
         var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
         this.clipboard = clipboard;
         this.alertCtrl = alertCtrl;
         this.numberOfAccaunt = __WEBPACK_IMPORTED_MODULE_4__app_global__["a" /* data */].activeAddress;
@@ -1058,10 +934,8 @@ var DetailsPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-details',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/details/details.html"*/'<!--\n  Generated template for the DetailsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>details</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <ion-list>\n        <ion-item>\n          <ion-note item-start>\n            Address {{numberOfAccaunt}}:\n          </ion-note>\n          {{address}}\n          <ion-note item-end>\n              <button (click)="copyAddress()"\n                      ion-button color="secondary">Copy</button>\n          </ion-note>\n        </ion-item>\n      </ion-list>\n\n  <ion-grid>\n      <ion-row justify-content-center>\n        <div *ngIf="qrCodeString">\n          <ion-img width="150"height="150"\n                  src="{{qrCodeString}}">\n          </ion-img>\n        </div>\n      </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/details/details.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__["a" /* Clipboard */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_clipboard__["a" /* Clipboard */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
     ], DetailsPage);
     return DetailsPage;
 }());
@@ -1076,27 +950,20 @@ var DetailsPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
 
 var AboutPage = /** @class */ (function () {
-    function AboutPage(navCtrl) {
-        this.navCtrl = navCtrl;
+    function AboutPage() {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-about',template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/pages/about/about.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+        })
     ], AboutPage);
     return AboutPage;
 }());
@@ -1126,20 +993,20 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(409);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_pages_imports_pages_imports__ = __webpack_require__(339);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_auth_auth__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_auth_auth__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_details_details__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_send_send__ = __webpack_require__(333);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__service_local_storage__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__global__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_storage__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_storage__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_clipboard__ = __webpack_require__(341);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1177,8 +1044,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__["a" /* MenuPage */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_auth_auth__["a" /* AuthPage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_details_details__["a" /* DetailsPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_send_send__["a" /* SendPage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_pages_imports_pages_imports__["a" /* PagesImportsPage */]
+                __WEBPACK_IMPORTED_MODULE_10__pages_send_send__["a" /* SendPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -1192,7 +1058,6 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPage */],
                 __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_pages_imports_pages_imports__["a" /* PagesImportsPage */],
                 __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__["a" /* MenuPage */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_auth_auth__["a" /* AuthPage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_details_details__["a" /* DetailsPage */],
@@ -1221,10 +1086,10 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_auth_auth__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_auth_auth__ = __webpack_require__(270);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1238,7 +1103,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-// import { MenuPage } from '../pages/menu/menu';
 
 var MyApp = /** @class */ (function () {
     function MyApp(platform, statusBar, splashScreen) {
@@ -1253,7 +1117,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/rinat/ionic/ether-wallet/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>'/*ion-inline-end:"/home/rinat/ionic/ether-wallet/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -1320,18 +1184,6 @@ var Wallet = /** @class */ (function () {
         this.utils = __WEBPACK_IMPORTED_MODULE_2_web3_utils___default.a;
         this.eth = this._web3.eth;
         this.accounts = accounts;
-        this.net = new Promise(function (resolve, reject) {
-            /**
-             * @property: get network.
-             */
-            switch (_this._web3.version.network) {
-                case '1': resolve('main');
-                case '3': resolve('ropsten');
-                case '42': resolve('kovan');
-                case '4': resolve('rinkeby');
-                default: reject('none provider');
-            }
-        });
         this.getBlockNumber = new Promise(function (resolve, reject) {
             _this._web3.eth.getBlockNumber(function (err, block) {
                 if (err) {
@@ -1347,7 +1199,7 @@ var Wallet = /** @class */ (function () {
         return this._web3.eth.accounts.wallet.add(privateKey);
     };
     Wallet.prototype.createTenWallets = function (entropy) {
-        return this._web3.eth.accounts.wallet.create(5, entropy);
+        return this.accounts.wallet.create(5, entropy);
     };
     Wallet.prototype.sendTransaction = function (data, privateKey) {
         var _this = this;

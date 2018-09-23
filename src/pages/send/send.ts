@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
+import { AlertController, ViewController } from 'ionic-angular';
 
 import EthereumQRPlugin from 'ethereum-qr-code';
 
@@ -26,9 +26,7 @@ export class SendPage extends Wallet {
   private privateKey = data.wallet[data.activeAddress].privateKey;
 
   constructor(private alertCtrl: AlertController,
-              public navCtrl: NavController,
-              public viewCtrl: ViewController,
-              public navParams: NavParams) {
+              public viewCtrl: ViewController) {
     super();
   }
 

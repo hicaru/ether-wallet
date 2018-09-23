@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 
 import { Wallet } from '../../service/ether/wallet';
@@ -29,8 +29,7 @@ export class AuthPage extends Wallet {
   constructor(private alertCtrl: AlertController,
               private loadingCtrl: LoadingController,
               private repo: Repository,
-              public navCtrl: NavController,
-              public navParams: NavParams) {
+              public navCtrl: NavController) {
     super();
     // this.navCtrl.setRoot(MenuPage);
     // this.repo.onClear();
@@ -58,9 +57,9 @@ export class AuthPage extends Wallet {
 
     await this.loader.present();
 
-    const entropy = this.utils.randomHex(16);
-    this.createTenWallets(entropy);
-    this.repo.onWriteEntropy(entropy);
+    const entropy = await this.utils.randomHex(32);
+    await this.createTenWallets(entropy);
+    await this.repo.onWriteEntropy(entropy);
     await this.repo.onWriteWalletObjec(pass0);
     this.navCtrl.setRoot(MenuPage);
     await this.loader.dismiss();

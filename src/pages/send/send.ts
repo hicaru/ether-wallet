@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AlertController, ViewController } from 'ionic-angular';
+import { AlertController, ViewController, NavParams } from 'ionic-angular';
 import { Clipboard } from '@ionic-native/clipboard';
 
 import EthereumQRPlugin from 'ethereum-qr-code';
@@ -21,14 +21,24 @@ import { Ethereum } from '../../service/interfaces';
 })
 export class SendPage extends Wallet {
 
+  public toAddress: string = '';
+  public valueETH: string = '';
+
   public qrCodeString: string;
   private address: string = data.wallet[data.activeAddress].address;
   private privateKey = data.wallet[data.activeAddress].privateKey;
 
   constructor(private alertCtrl: AlertController,
+              private params: NavParams,
               private clipboard: Clipboard,
               public viewCtrl: ViewController) {
     super();
+
+    const qrcode = this.params.get('qrcode');
+
+    if (qrcode) {
+      this.qrToData(qrcode);
+    }
   }
 
   public async txSend(txData: Ethereum.ITxData) {
@@ -50,6 +60,7 @@ export class SendPage extends Wallet {
         buttons: ['OK']
       }).present();
       this.clipboard.copy(hash);
+      this.viewCtrl.dismiss();
       return hash;
     } catch(err) {
       this.alertCtrl.create({
@@ -66,7 +77,6 @@ export class SendPage extends Wallet {
 
     try {
       const data = {
-        from: this.address,
         to: txData.to,
         value: this.utils.toWei(txData.value.toString(), 'ether')
       };
@@ -81,6 +91,29 @@ export class SendPage extends Wallet {
         buttons: ['OK']
       }).present();
       return null;
+    }
+  }
+
+  public async qrToData(data: string) {
+    const qr = new EthereumQRPlugin();
+    let paymentParams: any;
+
+    try {
+      paymentParams = qr.readStringToJSON(data);
+    } catch(err) {
+      this.alertCtrl.create({
+        title: 'Error',
+        subTitle: 'QR CODE fail',
+        buttons: ['OK']
+      }).present();
+      return null;
+    }
+
+    this.toAddress = paymentParams.to;
+
+    if (paymentParams.value) {
+      this.valueETH = this.utils.fromWei(paymentParams.value.toString(), 'ether');
+      this.qrcode(paymentParams);
     }
   }
 

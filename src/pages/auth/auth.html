@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="bar">
     <ion-title>Sign</ion-title>
   </ion-navbar>
 
@@ -25,12 +25,14 @@
   </ion-list>
 
   <ion-list *ngIf="(isExisting | async)">
-      <ion-item>
+      <ion-item> 
           <ion-input #pass0
                      type="password"
                      (change)="signIn(pass0.value)"
                      placeholder="Password"></ion-input>
       </ion-item>
-      <button (click)="signIn(pass0.value)" ion-button>sign in</button>
+      <button (click)="signIn(pass0.value)"
+              color="warning"
+              ion-button>sign in</button>
     </ion-list>
 </ion-content>

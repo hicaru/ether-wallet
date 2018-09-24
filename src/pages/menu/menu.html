@@ -1,15 +1,21 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="bar">
     <button ion-button [menuToggle]>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>
-      Menu
-    </ion-title>
+
+    <ion-buttons>
+      <button (click)="page = pages.home"
+              ion-button
+              icon-only>
+        home
+      </button>
+    </ion-buttons>
 
     <ion-buttons end>
-      <button ion-button icon-only>
-        network: {{net | async}}
+      <button (click)="networkModal()"
+              ion-button icon-only>
+        network: {{networkActive}}
       </button>
     </ion-buttons>
 
@@ -18,7 +24,7 @@
 
 <ion-menu [content]="mycontent">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="bar">
       <ion-title>Wallet</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -32,9 +38,6 @@
       </button>
       <button menuClose ion-item (click)="page = pages.details">
         details
-      </button>
-      <button menuClose ion-item>
-        network
       </button>
       <button menuClose ion-item (click)="page = pages.about">
         about

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-zh/fpauth-strings.xml",
+                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-zh/fpauth-strings.xml",
                     "from": {
                         "startLines": "4,2,5,6,7,5,8,3,9,10",
                         "startColumns": "2,2,43,2,2,2,2,2,2,2",

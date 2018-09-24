@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
+            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
-                    "source": "/Users/Rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-nl/fpauth-strings.xml",
+                    "source": "/home/rinat/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/6abebbf7517f1d8e974aee6e4501e6dd/res/values-nl/values-nl.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "287,405,513,636,741,848,934,1042,1162,1239,1316,1398,1509,1613,1712,1827,1940,2043,2161,2264",
+                        "endColumns": "117,107,122,104,106,85,107,119,76,76,81,110,103,98,114,112,102,117,102,100",
+                        "endOffsets": "400,508,631,736,843,929,1037,1157,1234,1311,1393,1504,1608,1707,1822,1935,2038,2156,2259,2360"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,31",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,173,281,404,509,616,702,810,930,1007,1084,1166,1277,1381,1480,1595,1708,1811,1929,2870",
+                        "endColumns": "117,107,122,104,106,85,107,119,76,76,81,110,103,98,114,112,102,117,102,100",
+                        "endOffsets": "168,276,399,504,611,697,805,925,1002,1079,1161,1272,1376,1475,1590,1703,1806,1924,2027,2966"
+                    }
+                },
+                {
+                    "source": "/home/rinat/ionic/ether-wallet/platforms/android/app/src/main/res/values-nl/fpauth-strings.xml",
                     "from": {
                         "startLines": "3,1,5,6,7,4,8,2,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -13,11 +30,28 @@
                         "endOffsets": "225,67,365,424,523,271,592,136,753,849"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startLines": "21,22,23,24,25,26,27,28,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,144,200,294,353,452,498,567,636,797",
+                        "startOffsets": "2032,2121,2177,2271,2330,2429,2475,2544,2613,2774",
                         "endColumns": "88,55,93,58,98,45,68,68,160,95",
-                        "endOffsets": "139,195,289,348,447,493,562,631,792,888"
+                        "endOffsets": "2116,2172,2266,2325,2424,2470,2539,2608,2769,2865"
+                    }
+                },
+                {
+                    "source": "/home/rinat/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/70df35d79be9e8f6102b1a8bc265301c/res/values-nl/values-nl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,312",
+                        "endColumns": "58,46,150,111",
+                        "endOffsets": "109,156,307,419"
+                    },
+                    "to": {
+                        "startLines": "32,33,34,35",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2971,3030,3077,3228",
+                        "endColumns": "58,46,150,111",
+                        "endOffsets": "3025,3072,3223,3335"
                     }
                 }
             ]

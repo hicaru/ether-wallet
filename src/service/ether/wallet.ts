@@ -1,11 +1,11 @@
 import Web3 from 'web3';
 import Tx from 'ethereumjs-tx';
-import { config } from './config';
+import { config, INFURA } from './config';
 import { Ethereum } from '../interfaces';
 
 
 declare const Buffer: any;
-const web3 = new Web3(config.ROPSTEN);
+const web3 = new Web3(INFURA());
 
 
 export class Wallet {
@@ -21,20 +21,18 @@ export class Wallet {
     /**
      * @property: get network.
      */
+    const nets = Object.keys(config);
+
     switch (id) {
-      case 1: return 'mainnet';
-      case 3: return 'ropsten';
-      case 42: return 'kovan';
-      case 4: return 'rinkeby';
+      case 1: return nets[1];
+      case 3: return nets[0];
+      case 42: return nets[2];
+      case 4: return nets[3];
       default: return null;
     }
   });
 
   constructor() {}
-
-  public walletAddWeb3(privateKey: string): Ethereum.IWallet {
-    return this._web3.eth.accounts.wallet.add(privateKey);
-  }
 
   protected createTenWallets(entropy: string): Ethereum.IWallet[] {
     return this.accounts.wallet.create(5 ,entropy);
@@ -58,6 +56,14 @@ export class Wallet {
         if (hash) { return resolve(hash); }
       });
     });
+  }
+
+  protected setProvider(provider: string): void {
+    if (!provider) {
+      return null;
+    }
+    
+    this._web3.setProvider(config[provider]);
   }
 
 }

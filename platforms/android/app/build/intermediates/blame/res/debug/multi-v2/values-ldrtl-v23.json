@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/rinat/ionic/ether-wallet/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldrtl-v23/values-ldrtl-v23.xml",
+            "map": [
+                {
+                    "source": "/home/rinat/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/6abebbf7517f1d8e974aee6e4501e6dd/res/values-ldrtl-v23/values-ldrtl-v23.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "298",
+                        "endColumns": "112",
+                        "endOffsets": "406"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

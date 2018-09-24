@@ -6,7 +6,7 @@ import { LoadingController } from 'ionic-angular';
 import { Wallet } from '../../service/ether/wallet';
 import { Repository } from '../../service/local/storage';
 import { MenuPage } from '../menu/menu';
-
+import { data } from '../../app/global';
 /**
  * Generated class for the AuthPage page.
  *
@@ -33,6 +33,12 @@ export class AuthPage extends Wallet {
     super();
     // this.navCtrl.setRoot(MenuPage);
     // this.repo.onClear();
+    this.syncNet();
+  }
+
+  public async syncNet() {
+    data.netDefault = await this.repo.getNet();
+    await this.setProvider(data.netDefault);
   }
 
   public async signUp(pass0: string, pass1: string): Promise<void> {
@@ -68,7 +74,7 @@ export class AuthPage extends Wallet {
   public async signIn(value: string): Promise<void> {
     await this.loader.present();
 
-    let alert = {
+    const alert = {
       title: 'message',
       subTitle: 'Incorrect password',
       buttons: ['OK']
@@ -77,9 +83,9 @@ export class AuthPage extends Wallet {
     try {
       await this.repo.onGetWalletsDecrypt(value);
     } catch(err) {
-      this.alertCtrl.create(alert).present();
+      await this.alertCtrl.create(alert).present();
       await this.loader.dismiss();
-      return null;
+      return await null;
     }
 
     await this.repo.activeAccountGet();

@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +13,45 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.content , .item, .action-sheet-group {
+  background-image: linear-gradient(to right, #322745, #1F2139);
+}
+
+.item-cover, .item {
+  color: #8c76d8;
+}
+.action-sheet-container .action-sheet-group {
+
+  background-color: #322745;
+
+  .action-sheet-button {
+    color: #8c76d8;
+    
+  }
+  .action-sheet-selected {
+    color: #ffc107;
+  }
+  #acst-hdr-5 {
+    color: #f261ee;
+  }
+  .activated {
+    background: #c5bfed48;
+  }
+}
+.alert-md .alert-wrapper, .loading-md .loading-wrapper  {
+  background: #322745;
+  .loading-content {
+    color: #c5bfed;
+  }
+}
+.warning {
+  color: #ffc107;
+}
+.bar-button-default-md:hover:not(.disable-hover), .bar-button-clear-md-default:hover:not(.disable-hover), .bar-button-md-default:hover:not(.disable-hover) {
+  color: #f261ee;
+}
+
+ion-app.cameraView, ion-app.cameraView .nav-decor {
+  background: transparent none !important; 
+}

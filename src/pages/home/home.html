@@ -1,34 +1,41 @@
 <ion-content>
-  <ion-card>
+  <ion-card color="bar">
       <ion-card-header>
-        current block: {{getBlockNumber | async}}
+        current block:
+        <span class="warning">{{getBlockNumber | async}}</span>
       </ion-card-header>
       <ion-card-content>
-        balance: {{balance}} ETH
+        balance: <span class="warning">{{balance}}</span> ETH
       </ion-card-content>
     </ion-card>
 
   <ion-grid>
     <ion-row justify-content-center>
       <div>
-        <button (click)="presentProfileModal()"
+        <button (click)="txModal()"
             ion-button color="secondary">
           send
         </button>
       </div>
     </ion-row>
   </ion-grid>
+  <ion-fab right bottom>
+      <button (click)="qrScanerModal()" ion-fab color="violet">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+  </ion-fab>
 </ion-content>
 
 <ion-footer>
   <ion-list>
     <ion-item>
-      <ion-label>
+      <ion-label color="primary">
           address: 
       </ion-label>
       <ion-select [(ngModel)]="isNumberOfAddress"
                   interface="action-sheet">
         <ion-option *ngFor="let obj of wallets; let i=index"
+                    class="option"
                     [value]="i">{{i + 1}} {{obj.address.slice(0, 12)}}...</ion-option>
       </ion-select> 
     </ion-item>

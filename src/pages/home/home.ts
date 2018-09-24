@@ -7,7 +7,7 @@ import { data } from '../../app/global';
 import { Repositories } from '../../service/interfaces';
 import { SendPage } from '../send/send';
 import { Repository } from '../../service/local/storage';
-
+import { ScanerPage } from '../scaner/scaner';
 
 @Component({
   selector: 'page-home',
@@ -50,9 +50,25 @@ export class HomePage extends Wallet {
     });
   }
 
-  presentProfileModal() {
-    const profileModal = this.modalCtrl.create(SendPage);
-    profileModal.present();
+  public txModal() {
+    const tx = this.modalCtrl.create(SendPage);
+    tx.present();
+  }
+
+  public qrScanerModal() {
+    window.document.querySelector('#iapp').className = 'cameraView';
+    const scaner = this.modalCtrl.create(ScanerPage);
+    scaner.onDidDismiss(qrcodetext => {
+      window.document.querySelector('#iapp').className = '';
+
+      if (!qrcodetext) {
+        return null;
+      } else {
+        const tx = this.modalCtrl.create(SendPage, {qrcode: qrcodetext});
+        tx.present();
+      }
+    });
+    scaner.present();
   }
 
 }

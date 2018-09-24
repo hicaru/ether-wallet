@@ -59,6 +59,14 @@ module.exports = [
     "pluginId": "cordova-plugin-nativestorage"
   },
   {
+    "id": "cordova-plugin-qrscanner.QRScanner",
+    "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+    "pluginId": "cordova-plugin-qrscanner",
+    "clobbers": [
+      "QRScanner"
+    ]
+  },
+  {
     "id": "cordova-plugin-splashscreen.SplashScreen",
     "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
     "pluginId": "cordova-plugin-splashscreen",
@@ -92,6 +100,7 @@ module.exports.metadata =
   "cordova-plugin-ionic-keyboard": "2.1.2",
   "cordova-plugin-ionic-webview": "2.1.4",
   "cordova-plugin-nativestorage": "2.3.2",
+  "cordova-plugin-qrscanner": "2.6.0",
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-statusbar": "2.4.2",
   "cordova-plugin-whitelist": "1.3.3",
